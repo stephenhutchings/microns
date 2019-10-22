@@ -15,7 +15,8 @@ DisplayStrings = (
 "/chat",
 "/link",
 "/i-bullet/text-unstyle",
-"/vol-high"
+"/vol-high",
+"/radio-off/radio-on"
 );
 copyright = "Copyright © 2018 by Stephen Hutchings. All rights reserved.";
 customParameters = (
@@ -147,7 +148,7 @@ name = Languagesystems;
 );
 features = (
 {
-code = "lookupflag IgnoreMarks;\012sub box i-cross by box-cross;\012sub box i-minus by box-minus;\012sub box i-minus by box-minus;\012sub box i-plus by box-plus;\012sub box i-plus by box-plus;\012sub box i-tick by box-tick;\012sub box minus by box-minus;\012sub box plus by box-plus;\012sub radio-off i-bullet by radio-full;\012sub radio-full i-bullet by radio-full;\012sub radio-off i-cross by fail;\012sub radio-full i-cross by fail;\012sub radio-off i-tick by pass;\012sub radio-full i-tick by pass;\012sub radio-off play by video;\012sub radio-full play by video;\012sub i-bullet radio-off by radio-full;\012sub i-bullet radio-full by radio-full;\012sub i-cross box by box-cross;\012sub i-cross radio-off by fail;\012sub i-cross radio-full by fail;\012sub i-tick box by box-tick;\012sub i-tick radio-off by pass;\012sub i-tick radio-full by pass;\012sub minus box by box-minus;\012sub minus search by zoom-out;\012sub play radio-off by video;\012sub play radio-full by video;\012sub plus box by box-plus;\012sub plus search by zoom-in;\012sub search minus by zoom-out;\012sub search plus by zoom-in;";
+code = "lookupflag IgnoreMarks;\012sub box i-cross by box-cross;\012sub box i-minus by box-minus;\012sub box i-plus by box-plus;\012sub box i-tick by box-tick;\012sub box minus by box-minus;\012sub box plus by box-plus;\012sub i-bullet radio-full by radio-on;\012sub i-bullet radio-off by radio-on;\012sub i-cross box by box-cross;\012sub i-cross radio-full by fail;\012sub i-cross radio-off by fail;\012sub i-tick box by box-tick;\012sub i-tick radio-full by pass;\012sub i-tick radio-off by pass;\012sub minus box by box-minus;\012sub minus search by zoom-out;\012sub play radio-full by video;\012sub play radio-off by video;\012sub plus box by box-plus;\012sub plus search by zoom-in;\012sub radio-full i-bullet by radio-on;\012sub radio-full i-cross by fail;\012sub radio-full i-tick by pass;\012sub radio-full play by video;\012sub radio-off i-bullet by radio-on;\012sub radio-off i-cross by fail;\012sub radio-off i-tick by pass;\012sub radio-off play by video;\012sub search minus by zoom-out;\012sub search plus by zoom-in;";
 name = liga;
 }
 );
@@ -4352,7 +4353,7 @@ unicode = E755;
 {
 glyphname = "radio-off";
 production = "radio-off";
-lastChange = "2019-10-21 12:40:13 +0000";
+lastChange = "2019-10-22 07:01:17 +0000";
 layers = (
 {
 layerId = "6EE81571-8FAC-412F-997F-533F3C178221";
@@ -4360,58 +4361,34 @@ paths = (
 {
 closed = 1;
 nodes = (
-"369 -32 OFFCURVE",
-"442 11 OFFCURVE",
-"482 80 CURVE SMOOTH",
-"502 114 OFFCURVE",
-"512 151 OFFCURVE",
+"409 -32 OFFCURVE",
+"512 65 OFFCURVE",
 "512 192 CURVE SMOOTH",
-"512 273 OFFCURVE",
-"469 346 OFFCURVE",
-"401 386 CURVE SMOOTH",
-"366 406 OFFCURVE",
-"329 416 OFFCURVE",
+"512 313 OFFCURVE",
+"415 416 OFFCURVE",
 "288 416 CURVE SMOOTH",
-"207 416 OFFCURVE",
-"134 373 OFFCURVE",
-"94 305 CURVE SMOOTH",
-"74 270 OFFCURVE",
-"64 233 OFFCURVE",
+"167 416 OFFCURVE",
+"64 319 OFFCURVE",
 "64 192 CURVE SMOOTH",
-"64 111 OFFCURVE",
-"107 38 OFFCURVE",
-"176 -2 CURVE SMOOTH",
-"210 -22 OFFCURVE",
-"247 -32 OFFCURVE",
+"64 71 OFFCURVE",
+"161 -32 OFFCURVE",
 "288 -32 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"224 16 OFFCURVE",
-"167 50 OFFCURVE",
-"136 104 CURVE SMOOTH",
-"120 131 OFFCURVE",
-"112 160 OFFCURVE",
+"191 16 OFFCURVE",
+"112 96 OFFCURVE",
 "112 192 CURVE SMOOTH",
-"112 256 OFFCURVE",
-"146 313 OFFCURVE",
-"200 345 CURVE SMOOTH",
-"227 360 OFFCURVE",
-"256 368 OFFCURVE",
+"112 287 OFFCURVE",
+"187 368 OFFCURVE",
 "288 368 CURVE SMOOTH",
-"352 368 OFFCURVE",
-"409 335 OFFCURVE",
-"441 281 CURVE SMOOTH",
-"456 254 OFFCURVE",
-"464 224 OFFCURVE",
+"384 368 OFFCURVE",
+"464 294 OFFCURVE",
 "464 192 CURVE SMOOTH",
-"464 128 OFFCURVE",
-"431 71 OFFCURVE",
-"377 40 CURVE SMOOTH",
-"350 24 OFFCURVE",
-"320 16 OFFCURVE",
+"464 94 OFFCURVE",
+"386 16 OFFCURVE",
 "288 16 CURVE SMOOTH"
 );
 }
@@ -4425,7 +4402,7 @@ unicode = E756;
 {
 glyphname = "radio-on";
 production = "radio-on";
-lastChange = "2019-10-21 12:40:17 +0000";
+lastChange = "2019-10-22 06:51:42 +0000";
 layers = (
 {
 components = (
