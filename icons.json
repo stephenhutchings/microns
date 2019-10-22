@@ -1,0 +1,650 @@
+[
+  {
+    "name": "Left Arrow",
+    "class": "mu-arrow-left",
+    "code": "E700",
+    "match": "direction|west"
+  },
+  {
+    "name": "Right Arrow",
+    "class": "mu-arrow-right",
+    "code": "E701",
+    "match": "direction|east"
+  },
+  {
+    "name": "Up Arrow",
+    "class": "mu-arrow-up",
+    "code": "E702",
+    "match": "direction|north"
+  },
+  {
+    "name": "Down Arrow",
+    "class": "mu-arrow-down",
+    "code": "E703",
+    "match": "direction|south"
+  },
+  {
+    "name": "Left",
+    "class": "mu-left",
+    "code": "E704",
+    "match": "chevron|angle|west"
+  },
+  {
+    "name": "Right",
+    "class": "mu-right",
+    "code": "E705",
+    "match": "chevron|angle|east"
+  },
+  {
+    "name": "Up",
+    "class": "mu-up",
+    "code": "E706",
+    "match": "chevron|angle|north"
+  },
+  {
+    "name": "Down",
+    "class": "mu-down",
+    "code": "E707",
+    "match": "chevron|angle|south"
+  },
+  {
+    "name": "Upload",
+    "class": "mu-upload",
+    "code": "E708",
+    "match": "align|top|push"
+  },
+  {
+    "name": "Download",
+    "class": "mu-download",
+    "code": "E709",
+    "match": "align|bottom|pull"
+  },
+  {
+    "name": "Undo",
+    "class": "mu-undo",
+    "code": "E70A",
+    "match": "back|history|navigate|left"
+  },
+  {
+    "name": "Redo",
+    "class": "mu-redo",
+    "code": "E70B",
+    "match": "forward|history|navigate|right"
+  },
+  {
+    "name": "Replay",
+    "class": "mu-replay",
+    "code": "E70C",
+    "match": "rewind,restart"
+  },
+  {
+    "name": "Plus",
+    "class": "mu-plus",
+    "code": "E70D",
+    "match": "add|new|create|maximise|maximize"
+  },
+  {
+    "name": "Minus",
+    "class": "mu-minus",
+    "code": "E70E",
+    "match": "delete|remove|minimise|minimize"
+  },
+  {
+    "name": "Caret",
+    "class": "mu-caret",
+    "code": "E70F",
+    "match": "sort|select"
+  },
+  {
+    "name": "Up Caret",
+    "class": "mu-caret-up",
+    "code": "E710",
+    "match": "sort|select|ascending|drop|up"
+  },
+  {
+    "name": "Down Caret",
+    "class": "mu-caret-down",
+    "code": "E711",
+    "match": "sort|select|descending|drop|down"
+  },
+  {
+    "name": "Left Inline",
+    "class": "mu-i-left",
+    "code": "E712",
+    "match": "chevron|angle|west"
+  },
+  {
+    "name": "Right Inline",
+    "class": "mu-i-right",
+    "code": "E713",
+    "match": "chevron|angle|east"
+  },
+  {
+    "name": "Up Inline",
+    "class": "mu-i-up",
+    "code": "E714",
+    "match": "chevron|angle|north"
+  },
+  {
+    "name": "Down Inline",
+    "class": "mu-i-down",
+    "code": "E715",
+    "match": "chevron|angle|south"
+  },
+  {
+    "name": "Plus Inline",
+    "class": "mu-i-plus",
+    "code": "E716",
+    "match": "add|new|create|maximise|maximize"
+  },
+  {
+    "name": "Minus Inline",
+    "class": "mu-i-minus",
+    "code": "E717",
+    "match": "delete|remove|minimise|minimize"
+  },
+  {
+    "name": "Tick Inline",
+    "class": "mu-i-tick",
+    "code": "E718",
+    "match": "check|correct"
+  },
+  {
+    "name": "Cross Inline",
+    "class": "mu-i-cross",
+    "code": "E719",
+    "match": "cancel|undo|clear|wrong|incorrect"
+  },
+  {
+    "name": "Bullet Inline",
+    "class": "mu-i-bullet",
+    "code": "E71A",
+    "match": "circle|dot|spot"
+  },
+  {
+    "name": "Asterisk Inline",
+    "class": "mu-i-asterisk",
+    "code": "E71B",
+    "match": "check|correct"
+  },
+  {
+    "name": "Play",
+    "class": "mu-play",
+    "code": "E71C",
+    "match": "media,watch|go"
+  },
+  {
+    "name": "Pause",
+    "class": "mu-pause",
+    "code": "E71D",
+    "match": "media,stop"
+  },
+  {
+    "name": "Subtitles",
+    "class": "mu-subtitles",
+    "code": "E71E",
+    "match": "media"
+  },
+  {
+    "name": "Low Volume",
+    "class": "mu-vol-low",
+    "code": "E71F",
+    "match": "media,sound|listen|mute|quiet"
+  },
+  {
+    "name": "Mid Volume",
+    "class": "mu-vol-mid",
+    "code": "E720",
+    "match": "media,sound|listen|medium"
+  },
+  {
+    "name": "High Volume",
+    "class": "mu-vol-high",
+    "code": "E721",
+    "match": "media,sound|listen|loud"
+  },
+  {
+    "name": "Mute Volume",
+    "class": "mu-vol-mute",
+    "code": "E722",
+    "match": "media,sound|listen|silent"
+  },
+  {
+    "name": "Captions",
+    "class": "mu-captions",
+    "code": "E723",
+    "match": "media,closed"
+  },
+  {
+    "name": "High Definition",
+    "class": "mu-hd",
+    "code": "E724",
+    "match": "media,high|definition"
+  },
+  {
+    "name": "Audio Description",
+    "class": "mu-audio-description",
+    "code": "E725",
+    "match": "media,accessibility"
+  },
+  {
+    "name": "Line Chart",
+    "class": "mu-chart-line",
+    "code": "E726",
+    "match": "graph|data"
+  },
+  {
+    "name": "Bar Chart",
+    "class": "mu-chart-bar",
+    "code": "E727",
+    "match": "graph|data"
+  },
+  {
+    "name": "Scatter Plot",
+    "class": "mu-chart-scatter",
+    "code": "E728",
+    "match": "graph|data"
+  },
+  {
+    "name": "Pie Chart",
+    "class": "mu-chart-pie",
+    "code": "E729",
+    "match": "graph|data"
+  },
+  {
+    "name": "Calendar",
+    "class": "mu-calendar",
+    "code": "E72A",
+    "match": "date|schedule|year|month"
+  },
+  {
+    "name": "Clock",
+    "class": "mu-clock",
+    "code": "E72B",
+    "match": "time|schedule|hour|second|minute"
+  },
+  {
+    "name": "Star",
+    "class": "mu-star",
+    "code": "E72C",
+    "match": "favourite|favorite|review|like"
+  },
+  {
+    "name": "Heart",
+    "class": "mu-heart",
+    "code": "E72D",
+    "match": "favourite|favorite|love|like"
+  },
+  {
+    "name": "Flag",
+    "class": "mu-flag",
+    "code": "E72E",
+    "match": "remember|alert"
+  },
+  {
+    "name": "Bookmark",
+    "class": "mu-bookmark",
+    "code": "E72F",
+    "match": "save|for|later"
+  },
+  {
+    "name": "Chat",
+    "class": "mu-chat",
+    "code": "E730",
+    "match": "comment|conversation"
+  },
+  {
+    "name": "Edit",
+    "class": "mu-edit",
+    "code": "E731",
+    "match": "create"
+  },
+  {
+    "name": "Delete",
+    "class": "mu-delete",
+    "code": "E732",
+    "match": "trash|remove|archive"
+  },
+  {
+    "name": "Show",
+    "class": "mu-show",
+    "code": "E733",
+    "match": "visible|published|eye|open"
+  },
+  {
+    "name": "Hide",
+    "class": "mu-hide",
+    "code": "E734",
+    "match": "hidden|unpublished|eye|closed"
+  },
+  {
+    "name": "Lock",
+    "class": "mu-lock",
+    "code": "E735",
+    "match": "hidden"
+  },
+  {
+    "name": "Cog",
+    "class": "mu-cog",
+    "code": "E736",
+    "match": "settings|preferences"
+  },
+  {
+    "name": "Link",
+    "class": "mu-link",
+    "code": "E737",
+    "match": "anchor|chain"
+  },
+  {
+    "name": "User",
+    "class": "mu-user",
+    "code": "E738",
+    "match": "person|individual"
+  },
+  {
+    "name": "Group",
+    "class": "mu-group",
+    "code": "E739",
+    "match": "user|collection|team"
+  },
+  {
+    "name": "File",
+    "class": "mu-file",
+    "code": "E73A",
+    "match": "document"
+  },
+  {
+    "name": "Image",
+    "class": "mu-image",
+    "code": "E73B",
+    "match": "picture|photo"
+  },
+  {
+    "name": "Video",
+    "class": "mu-video",
+    "code": "E73C",
+    "match": "play|circle"
+  },
+  {
+    "name": "Audio",
+    "class": "mu-audio",
+    "code": "E73D",
+    "match": "headphones"
+  },
+  {
+    "name": "Print",
+    "class": "mu-print",
+    "code": "E73E",
+    "match": "printer"
+  },
+  {
+    "name": "Menu",
+    "class": "mu-menu",
+    "code": "E73F",
+    "match": "hamburger|bars|horizontal"
+  },
+  {
+    "name": "Bars",
+    "class": "mu-bars",
+    "code": "E740",
+    "match": "hamburger|menu|vertical"
+  },
+  {
+    "name": "Cancel",
+    "class": "mu-cancel",
+    "code": "E741",
+    "match": "undo|close|exit|cross|x"
+  },
+  {
+    "name": "Options (Horizontal)",
+    "class": "mu-opts-h",
+    "code": "E742",
+    "match": "dots|three|more|horizontal"
+  },
+  {
+    "name": "Options (Vertical)",
+    "class": "mu-opts-v",
+    "code": "E743",
+    "match": "dots|three|more|vertical"
+  },
+  {
+    "name": "Search",
+    "class": "mu-search",
+    "code": "E744",
+    "match": "find|magnify"
+  },
+  {
+    "name": "Zoom In",
+    "class": "mu-zoom-in",
+    "code": "E745",
+    "match": "magnify"
+  },
+  {
+    "name": "Zoom Out",
+    "class": "mu-zoom-out",
+    "code": "E746",
+    "match": "magnify"
+  },
+  {
+    "name": "Contract",
+    "class": "mu-contract",
+    "code": "E747",
+    "match": "minimise|minimize"
+  },
+  {
+    "name": "Expand",
+    "class": "mu-expand",
+    "code": "E748",
+    "match": "maximise|maximize"
+  },
+  {
+    "name": "Grid",
+    "class": "mu-grid",
+    "code": "E749",
+    "match": "square"
+  },
+  {
+    "name": "Matrix",
+    "class": "mu-matrix",
+    "code": "E74A",
+    "match": "square|grid"
+  },
+  {
+    "name": "Chapters",
+    "class": "mu-chapters",
+    "code": "E74B",
+    "match": "list"
+  },
+  {
+    "name": "RSS",
+    "class": "mu-rss",
+    "code": "E74C",
+    "match": "feed"
+  },
+  {
+    "name": "Share",
+    "class": "mu-share",
+    "code": "E74D",
+    "match": "connect"
+  },
+  {
+    "name": "Mail",
+    "class": "mu-mail",
+    "code": "E74E",
+    "match": "email|post|send"
+  },
+  {
+    "name": "Code",
+    "class": "mu-code",
+    "code": "E74F",
+    "match": "embed"
+  },
+  {
+    "name": "Box",
+    "class": "mu-box",
+    "code": "E750",
+    "match": "box|checkbox"
+  },
+  {
+    "name": "Solid Box",
+    "class": "mu-box-full",
+    "code": "E751",
+    "match": "box|checkbox|filled"
+  },
+  {
+    "name": "Box Plus",
+    "class": "mu-box-plus",
+    "code": "E752",
+    "match": "box|checkbox|add"
+  },
+  {
+    "name": "Box Minus",
+    "class": "mu-box-minus",
+    "code": "E753",
+    "match": "box|checkbox|partial|indeterminate"
+  },
+  {
+    "name": "Box Tick",
+    "class": "mu-box-tick",
+    "code": "E754",
+    "match": "box|checkbox|selected|on"
+  },
+  {
+    "name": "Box Cross",
+    "class": "mu-box-cross",
+    "code": "E755",
+    "match": "box|checkbox|ballot"
+  },
+  {
+    "name": "Radio Off",
+    "class": "mu-radio-off",
+    "code": "E756",
+    "match": "ring|circle|off"
+  },
+  {
+    "name": "Radio On",
+    "class": "mu-radio-on",
+    "code": "E757",
+    "match": "fisheye|selected|radio|on|record"
+  },
+  {
+    "name": "Radio Filled",
+    "class": "mu-radio-full",
+    "code": "E758",
+    "match": "ring|circle|filled|on"
+  },
+  {
+    "name": "Info",
+    "class": "mu-info",
+    "code": "E759",
+    "match": "notification|warning"
+  },
+  {
+    "name": "Warn",
+    "class": "mu-warn",
+    "code": "E75A",
+    "match": "notification|danger|warning|error"
+  },
+  {
+    "name": "Pass",
+    "class": "mu-pass",
+    "code": "E75B",
+    "match": "confirm"
+  },
+  {
+    "name": "Fail",
+    "class": "mu-fail",
+    "code": "E75C",
+    "match": "clear|error"
+  },
+  {
+    "name": "Text",
+    "class": "mu-text",
+    "code": "E75D",
+    "match": "font|letter|A"
+  },
+  {
+    "name": "Bold",
+    "class": "mu-bold",
+    "code": "E75E",
+    "match": "font|strong"
+  },
+  {
+    "name": "Italic",
+    "class": "mu-italic",
+    "code": "E75F",
+    "match": "font|emphasis"
+  },
+  {
+    "name": "Underline",
+    "class": "mu-underline",
+    "code": "E760",
+    "match": ""
+  },
+  {
+    "name": "Strikeout",
+    "class": "mu-strikeout",
+    "code": "E761",
+    "match": "font|strikethrough|strike-out"
+  },
+  {
+    "name": "Text Size",
+    "class": "mu-text-size",
+    "code": "E762",
+    "match": "font"
+  },
+  {
+    "name": "Clear Styles",
+    "class": "mu-text-unstyle",
+    "code": "E763",
+    "match": "font|clear"
+  },
+  {
+    "name": "Align Left",
+    "class": "mu-align-left",
+    "code": "E764",
+    "match": "align|start"
+  },
+  {
+    "name": "Align Center",
+    "class": "mu-align-center",
+    "code": "E765",
+    "match": "align|middle"
+  },
+  {
+    "name": "Align Right",
+    "class": "mu-align-right",
+    "code": "E766",
+    "match": "align|end"
+  },
+  {
+    "name": "Indent",
+    "class": "mu-indent",
+    "code": "E767",
+    "match": "align|middle"
+  },
+  {
+    "name": "Outdent",
+    "class": "mu-outdent",
+    "code": "E768",
+    "match": "align|end"
+  },
+  {
+    "name": "Cloud",
+    "class": "mu-cloud",
+    "code": "E769",
+    "match": "server"
+  },
+  {
+    "name": "Web",
+    "class": "mu-web",
+    "code": "E76A",
+    "match": "world|map"
+  },
+  {
+    "name": "Wifi",
+    "class": "mu-wifi",
+    "code": "E76B",
+    "match": "online"
+  }
+]

@@ -1,0 +1,1 @@
+<svg width="{{width}}" height="512" viewBox="0 0 {{width}} 512" xmlns="http://www.w3.org/2000/svg" ><title>{{name}}</title><path d="{{path}}" /></svg>

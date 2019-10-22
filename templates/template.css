@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "microns";
+  font-style: normal;
+  font-weight: normal;
+  src: url("microns.eot");
+  src: url("microns.eot?#iefix") format("embedded-opentype"),
+       url("microns.woff2") format("woff2"),
+       url("microns.woff") format("woff"),
+       url("microns.ttf") format("truetype"),
+       url("microns.svg") format("svg");
+}
+
+.mu:before {
+  font-family: microns;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: none;
+  font-size: 1em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  user-select: none;
+}
+
+{{#each icons}}
+
+.mu-{{name}}:before {
+  content: "\\{{code}}";
+}
+{{/each}}

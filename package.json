@@ -1,0 +1,32 @@
+{
+  "name": "microns",
+  "version": "1.0.0",
+  "description": "The universal icon set for user interfaces.",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "node prepublish.js"
+  },
+  "files": [
+    "css/microns.css",
+    "fonts/microns.svg",
+    "fonts/microns.eot",
+    "fonts/microns.woff",
+    "fonts/microns.woff2",
+    "fonts/microns.html",
+    "svg/*.svg",
+    "icons.json"
+  ],
+  "keywords": [
+    "font",
+    "webfont",
+    "icons"
+  ],
+  "author": "Stephen Hutchings",
+  "license": "ISC",
+  "devDependencies": {
+    "fonteditor-core": "^2.0.3",
+    "fontmin": "^0.9.8",
+    "handlebars": "^4.4.5",
+    "svgpath": "^2.2.2"
+  }
+}
