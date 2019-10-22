@@ -7,16 +7,23 @@
     to make it easy to consume the icons in any format.
 */
 
-let fs = require("fs")
-let svgpath = require("svgpath")
-let handlebars = require("handlebars")
-let { Font, woff2 } = require("fonteditor-core")
-let buffer = fs.readFileSync("./fonts/microns.ttf")
+const fs = require("fs")
+const svgpath = require("svgpath")
+const handlebars = require("handlebars")
+const { Font, woff2 } = require("fonteditor-core")
+const buffer = fs.readFileSync("./fonts/microns.ttf")
 
 const templates = {
   svg: handlebars.compile(fs.readFileSync("./templates/template.svg").toString()),
   css: handlebars.compile(fs.readFileSync("./templates/template.css").toString()),
   html: handlebars.compile(fs.readFileSync("./templates/template.html").toString())
+}
+
+const note = function(type) {
+  return function(err) {
+    if (err) console.error(err)
+    else console.log(`✓ Saved ./fonts/microns.${type}`)
+  }
 }
 
 woff2.init().then(function(){
@@ -34,26 +41,22 @@ woff2.init().then(function(){
   let html = templates.html({ icons })
   let css = templates.css({ icons })
 
-  fs.writeFileSync(`./fonts/microns.html`, html)
-  fs.writeFileSync(`./fonts/microns.css`, css)
+  fs.writeFile(`./fonts/microns.html`, html, note("html"))
+  fs.writeFile(`./fonts/microns.css`, css, note("css"))
 
   let types = ["woff2", "woff", "eot", "svg"]
 
   types.forEach(function(type){
     let buffer = font.write({ type })
-    fs.writeFileSync(`./fonts/microns.${type}`, buffer)
+    fs.writeFile(`./fonts/microns.${type}`, buffer, note(type))
 
     if (type === "svg") {
-      buffer.match(/<glyph [^>]+>/g).forEach(function(str){
+      let list = buffer.match(/<glyph [^>]+>/g).map(function(str){
         let data = str.match(/d="([^"]+)"/)
         if (data) {
           let name = str.match(/glyph-name="([^"]+)"/)[1]
           let path = data[1]
           let icon = icons.filter((i) => i.name === name)[0]
-
-          if (name == "radio-on") {
-            console.log(path);
-          }
 
           path = svgpath(path)
             .abs()
@@ -66,10 +69,15 @@ woff2.init().then(function(){
 
           let svg = templates.svg({ name, path, width })
           fs.writeFileSync(`./svg/${name}.svg`, svg)
+          return name
         } else {
-          console.log(str);
+          console.log("Skipped an empty glyph while creating SVG.");
         }
       })
+      .filter((e) => e)
+
+      console.log(`✓ Saved ${list.length} SVG images.`);
+
     }
   })
 })
