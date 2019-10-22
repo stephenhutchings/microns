@@ -19,7 +19,13 @@
   "keywords": [
     "font",
     "webfont",
-    "icons"
+    "icons",
+    "svg",
+    "ttf",
+    "woff2",
+    "woff",
+    "eot",
+    "asset"
   ],
   "author": "Stephen Hutchings",
   "license": "ISC",
