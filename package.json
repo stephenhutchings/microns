@@ -28,6 +28,10 @@
     "asset"
   ],
   "author": "Stephen Hutchings",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/stephenhutchings/microns.git"
+  },
   "license": "(OFL-1.1 OR CC-BY-SA-4.0)",
   "devDependencies": {
     "fonteditor-core": "^2.0.3",
