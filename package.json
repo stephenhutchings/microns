@@ -2,7 +2,7 @@
   "name": "microns",
   "version": "1.0.2",
   "description": "The universal icon set for user interfaces.",
-  "main": "index.js",
+  "browser": "css/microns.css",
   "scripts": {
     "prepublish": "node prepublish.js"
   },
