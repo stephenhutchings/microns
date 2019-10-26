@@ -28,7 +28,7 @@
     "asset"
   ],
   "author": "Stephen Hutchings",
-  "license": "ISC",
+  "license": "(OFL-1.1 OR CC-BY-SA-4.0)",
   "devDependencies": {
     "fonteditor-core": "^2.0.3",
     "fontmin": "^0.9.8",
