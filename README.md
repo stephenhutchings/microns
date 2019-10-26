@@ -4,7 +4,7 @@ The universal icon set for user interfaces.
 Find out more at https://www.s-ings.com/projects/microns-icon-font/
 
 ```
-npm instal microns
+npm install microns
 ```
 
 -----
@@ -14,7 +14,7 @@ interfaces. Rather than provide a large library of unnecessary glyphs,
 microns provide a sensible baseline of well-drawn icons that will cover
 99% of your use cases for less than 5kb.
 
-<table>
+<table style="border:0;">
 <tr>
 <td><img alt="arrow-left" src="https://raw.githubusercontent.com/stephenhutchings/microns/master/svg/arrow-left.svg?sanitize=true" width="32" height="32" /></td>
 <td><img alt="arrow-right" src="https://raw.githubusercontent.com/stephenhutchings/microns/master/svg/arrow-right.svg?sanitize=true" width="32" height="32" /></td>
@@ -148,10 +148,7 @@ microns provide a sensible baseline of well-drawn icons that will cover
 </tr>
 </table>
 
-
--------
-
-## License
+### License
 
 #### Icons/Artwork
 
