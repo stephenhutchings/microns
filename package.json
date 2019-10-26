@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "The universal icon set for user interfaces.",
   "browser": "css/microns.css",
+  "homepage": "https://www.s-ings.com/projects/microns-icon-font/",
   "scripts": {
     "prepublish": "node prepublish.js"
   },
@@ -27,7 +28,10 @@
     "eot",
     "asset"
   ],
-  "author": "Stephen Hutchings",
+  "author": {
+    "name": "Stephen Hutchings",
+    "url": "https://www.s-ings.com/"
+  },
   "repository": {
     "type" : "git",
     "url" : "https://github.com/stephenhutchings/microns.git"
