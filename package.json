@@ -8,7 +8,7 @@
     "prepublish": "node prepublish.js"
   },
   "files": [
-    "css/microns.css",
+    "fonts/microns.css",
     "fonts/microns.svg",
     "fonts/microns.eot",
     "fonts/microns.woff",
