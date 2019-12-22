@@ -1,6 +1,6 @@
 {
   "name": "microns",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The universal icon set for user interfaces.",
   "browser": "css/microns.css",
   "homepage": "https://www.s-ings.com/projects/microns-icon-font/",
@@ -11,6 +11,7 @@
     "fonts/microns.css",
     "fonts/microns.svg",
     "fonts/microns.eot",
+    "fonts/microns.ttf",
     "fonts/microns.woff",
     "fonts/microns.woff2",
     "fonts/microns.html",
