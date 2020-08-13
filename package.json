@@ -35,7 +35,7 @@
   "devDependencies": {
     "fonteditor-core": "^2.0.3",
     "fontmin": "^0.9.8",
-    "handlebars": "^4.4.5",
+    "handlebars": "^4.7.6",
     "svgpath": "^2.2.2"
   }
 }
