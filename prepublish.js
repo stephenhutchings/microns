@@ -16,6 +16,7 @@ const buffer = fs.readFileSync("./fonts/microns.ttf")
 const templates = {
   svg: handlebars.compile(fs.readFileSync("./templates/template.svg").toString()),
   css: handlebars.compile(fs.readFileSync("./templates/template.css").toString()),
+  scss: handlebars.compile(fs.readFileSync("./templates/template.scss").toString()),
   html: handlebars.compile(fs.readFileSync("./templates/template.html").toString())
 }
 
@@ -40,9 +41,11 @@ woff2.init().then(function(){
 
   let html = templates.html({ icons })
   let css = templates.css({ icons })
+  let scss = templates.scss({ icons })
 
   fs.writeFile(`./fonts/microns.html`, html, note("html"))
   fs.writeFile(`./fonts/microns.css`, css, note("css"))
+  fs.writeFile(`./fonts/microns.scss`, scss, note("scss"))
 
   let types = ["woff2", "woff", "eot", "svg"]
 
