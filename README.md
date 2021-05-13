@@ -1,13 +1,14 @@
 # Microns
-The universal icon set for user interfaces.
+![npm](https://img.shields.io/npm/v/microns)
+![GitHub Repo stars](https://img.shields.io/github/stars/stephenhutchings/microns)
+![NPM](https://img.shields.io/npm/l/microns)
 
-Find out more at https://www.s-ings.com/projects/microns-icon-font/
+The universal icon set for user interfaces. [Read more](https://www.s-ings.com/projects/microns-icon-font/).
+
 
 ```
 npm install microns
 ```
-
------
 
 Microns are a no-nonsense set of icons designed specifically for user
 interfaces. Rather than provide a large library of unnecessary glyphs,
@@ -148,14 +149,42 @@ microns provide a sensible baseline of well-drawn icons that will cover
 </tr>
 </table>
 
-### License
+## Using Microns
 
-#### Icons/Artwork
+Microns can be consumed as icon fonts or SVG files. Import the fonts with the provided CSS or Sass files.
+
+A JSON dictionary provides a list of icon classes and corresponding unicode points.
+
+```
+icons.json
+
+fonts/
+  microns.css
+  microns.scss
+  microns.woff2
+  microns.woff
+  microns.ttf
+  microns.svg
+  microns.eot
+  
+svg/
+  align-center.svg
+  align-left.svg
+  align-right.svg
+  arrow-down.svg
+  arrow-left.svg
+  arrow-right.svg
+  ...
+```
+
+## License
+
+### Icons/Artwork
 
 Distributed under
 [CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/) licence.
 
-#### Font
+### Font
 
 Distributed under
 [SIL Open Font Licence](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web) licence.
