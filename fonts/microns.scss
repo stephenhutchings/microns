@@ -5,9 +5,7 @@ $microns-font-file: "microns" !default;
   font-family: $microns-font-name;
   font-style: normal;
   font-weight: normal;
-  src: url("#{$microns-font-file}.eot");
-  src: url("#{$microns-font-file}.eot?#iefix") format("embedded-opentype"),
-       url("#{$microns-font-file}.woff2") format("woff2"),
+  src: url("#{$microns-font-file}.woff2") format("woff2"),
        url("#{$microns-font-file}.woff") format("woff"),
        url("#{$microns-font-file}.ttf") format("truetype"),
        url("#{$microns-font-file}.svg") format("svg");

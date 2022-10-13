@@ -50,7 +50,7 @@ woff2.init().then(function(){
   fs.writeFile(`./fonts/microns.css`, css, note("css"))
   fs.writeFile(`./fonts/microns.scss`, scss, note("scss"))
 
-  let types = ["woff2", "woff", "eot", "svg"]
+  let types = ["woff2", "woff", "svg"]
 
   types.forEach(function(type){
     let buffer = font.write({ type })

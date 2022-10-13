@@ -2,10 +2,9 @@
   font-family: "microns";
   font-style: normal;
   font-weight: normal;
-  src: url("microns.eot");
-  src: url("microns.eot?#iefix") format("embedded-opentype"),
-       url("microns.woff2") format("woff2"),
+  src: url("microns.woff2") format("woff2"),
        url("microns.woff") format("woff"),
+       url("microns.otf") format("opentype"),
        url("microns.ttf") format("truetype"),
        url("microns.svg") format("svg");
 }
