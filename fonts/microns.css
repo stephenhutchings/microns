@@ -4,6 +4,7 @@
   font-weight: normal;
   src: url("microns.woff2") format("woff2"),
        url("microns.woff") format("woff"),
+       url("microns.otf") format("opentype"),
        url("microns.ttf") format("truetype"),
        url("microns.svg") format("svg");
 }
@@ -75,6 +76,14 @@
   content: "\e70c";
 }
 
+.mu-refresh:before {
+  content: "\e796";
+}
+
+.mu-external:before {
+  content: "\e773";
+}
+
 .mu-plus:before {
   content: "\e70d";
 }
@@ -143,8 +152,20 @@
   content: "\e71d";
 }
 
+.mu-prev:before {
+  content: "\e774";
+}
+
+.mu-next:before {
+  content: "\e775";
+}
+
 .mu-subtitles:before {
   content: "\e71e";
+}
+
+.mu-audio-description:before {
+  content: "\e725";
 }
 
 .mu-vol-low:before {
@@ -169,10 +190,6 @@
 
 .mu-hd:before {
   content: "\e724";
-}
-
-.mu-audio-description:before {
-  content: "\e725";
 }
 
 .mu-chart-line:before {
@@ -239,24 +256,20 @@
   content: "\e735";
 }
 
-.mu-cog:before {
-  content: "\e736";
-}
-
 .mu-link:before {
   content: "\e737";
 }
 
-.mu-user:before {
-  content: "\e738";
-}
-
-.mu-group:before {
-  content: "\e739";
+.mu-attach:before {
+  content: "\e776";
 }
 
 .mu-file:before {
   content: "\e73a";
+}
+
+.mu-folder:before {
+  content: "\e777";
 }
 
 .mu-image:before {
@@ -271,6 +284,14 @@
   content: "\e73d";
 }
 
+.mu-microphone:before {
+  content: "\e778";
+}
+
+.mu-video-camera:before {
+  content: "\e779";
+}
+
 .mu-print:before {
   content: "\e73e";
 }
@@ -283,16 +304,24 @@
   content: "\e740";
 }
 
-.mu-cancel:before {
-  content: "\e741";
-}
-
 .mu-opts-h:before {
   content: "\e742";
 }
 
 .mu-opts-v:before {
   content: "\e743";
+}
+
+.mu-home:before {
+  content: "\e77a";
+}
+
+.mu-cancel:before {
+  content: "\e741";
+}
+
+.mu-cog:before {
+  content: "\e736";
 }
 
 .mu-search:before {
@@ -323,24 +352,8 @@
   content: "\e74a";
 }
 
-.mu-chapters:before {
-  content: "\e74b";
-}
-
-.mu-rss:before {
-  content: "\e74c";
-}
-
-.mu-share:before {
-  content: "\e74d";
-}
-
-.mu-mail:before {
-  content: "\e74e";
-}
-
-.mu-code:before {
-  content: "\e74f";
+.mu-list:before {
+  content: "\e77b";
 }
 
 .mu-box:before {
@@ -365,6 +378,22 @@
 
 .mu-box-cross:before {
   content: "\e755";
+}
+
+.mu-box-o-minus:before {
+  content: "\e77c";
+}
+
+.mu-box-o-plus:before {
+  content: "\e77d";
+}
+
+.mu-box-o-tick:before {
+  content: "\e77e";
+}
+
+.mu-box-o-cross:before {
+  content: "\e77f";
 }
 
 .mu-radio-off:before {
@@ -393,6 +422,10 @@
 
 .mu-fail:before {
   content: "\e75c";
+}
+
+.mu-unknown:before {
+  content: "\e780";
 }
 
 .mu-text:before {
@@ -443,14 +476,126 @@
   content: "\e768";
 }
 
-.mu-cloud:before {
-  content: "\e769";
+.mu-chapters:before {
+  content: "\e74b";
+}
+
+.mu-justify-left:before {
+  content: "\e782";
+}
+
+.mu-justify-center:before {
+  content: "\e781";
+}
+
+.mu-justify-right:before {
+  content: "\e783";
+}
+
+.mu-sort-asc:before {
+  content: "\e784";
+}
+
+.mu-sort-desc:before {
+  content: "\e785";
+}
+
+.mu-translate:before {
+  content: "\e786";
+}
+
+.mu-user:before {
+  content: "\e738";
+}
+
+.mu-group:before {
+  content: "\e739";
 }
 
 .mu-web:before {
   content: "\e76a";
 }
 
+.mu-cloud:before {
+  content: "\e769";
+}
+
 .mu-wifi:before {
   content: "\e76b";
+}
+
+.mu-rss:before {
+  content: "\e74c";
+}
+
+.mu-share:before {
+  content: "\e74d";
+}
+
+.mu-mail:before {
+  content: "\e74e";
+}
+
+.mu-code:before {
+  content: "\e74f";
+}
+
+.mu-drive:before {
+  content: "\e787";
+}
+
+.mu-server:before {
+  content: "\e788";
+}
+
+.mu-power:before {
+  content: "\e789";
+}
+
+.mu-copy:before {
+  content: "\e78a";
+}
+
+.mu-transparent:before {
+  content: "\e78b";
+}
+
+.mu-opaque:before {
+  content: "\e78c";
+}
+
+.mu-landscape:before {
+  content: "\e78d";
+}
+
+.mu-portrait:before {
+  content: "\e78e";
+}
+
+.mu-panel-left:before {
+  content: "\e78f";
+}
+
+.mu-panel-right:before {
+  content: "\e790";
+}
+
+.mu-min:before {
+  content: "\e791";
+}
+
+.mu-max:before {
+  content: "\e792";
+}
+
+.mu-scale:before {
+  content: "\e793";
+}
+
+.mu-move:before {
+  content: "\e794";
+}
+
+.mu-internal:before {
+  content: "\e795";
 }
