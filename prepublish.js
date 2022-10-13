@@ -1,9 +1,9 @@
 /*
     Microns are generated slightly differently than other fonts. The source of
     truth is a glyphs file - preferred for its path editor - which generates the
-    TTF format. All other formats are then generated after reading this file.
+    OTF format. All other formats are then generated after reading this file.
 
-    A JSON dictionary, SVG images and an example HTML file are also generated
+    A JSON dictionary, SVG images and an preview SVG image are also available
     to make it easy to consume the icons in any format.
 */
 
@@ -11,7 +11,9 @@ const fs = require("fs")
 const svgpath = require("svgpath")
 const handlebars = require("handlebars")
 const { Font, woff2 } = require("fonteditor-core")
-const buffer = fs.readFileSync("./fonts/microns.ttf")
+const buffer = fs.readFileSync("./fonts/microns.otf")
+
+handlebars.registerHelper("round", Math.round)
 
 const templates = {
   svg: handlebars.compile(
@@ -23,25 +25,28 @@ const templates = {
   scss: handlebars.compile(
     fs.readFileSync("./templates/template.scss").toString()
   ),
+  preview: handlebars.compile(
+    fs.readFileSync("./templates/preview.svg").toString()
+  ),
 }
 
-const note = function(type) {
-  return function(err) {
+const note = function (type) {
+  return function (err) {
     if (err) console.error(err)
     else console.log(`✓ Saved ./fonts/microns.${type}`)
   }
 }
 
-woff2.init().then(function(){
-  let font = Font.create(buffer, { type: "ttf" })
-  let fontObject = font.get()
+woff2.init().then(function () {
+  const font = Font.create(buffer, { type: "otf" })
+  const fontObject = font.get()
 
-  let icons = fontObject.glyf
+  const icons = fontObject.glyf
     .filter((g) => g.unicode && g.name !== "space")
     .map((g) => ({
       code: g.unicode[0].toString(16),
       name: g.name,
-      data: g
+      data: g,
     }))
 
   const css = templates.css({ icons })
@@ -52,38 +57,76 @@ woff2.init().then(function(){
 
   let types = ["woff2", "woff", "svg"]
 
-  types.forEach(function(type){
-    let buffer = font.write({ type })
+  types.forEach(function (type) {
+    const buffer = font.write({ type })
+
     fs.writeFile(`./fonts/microns.${type}`, buffer, note(type))
 
     if (type === "svg") {
-      let list = buffer.match(/<glyph [^>]+>/g).map(function(str){
-        let data = str.match(/d="([^"]+)"/)
-        if (data) {
-          let name = str.match(/glyph-name="([^"]+)"/)[1]
-          let path = data[1]
-          let icon = icons.filter((i) => i.name === name)[0]
+      const height = fontObject.hhea.ascent - fontObject.hhea.descent
 
-          path = svgpath(path)
-            .abs()
-            .translate(0, -fontObject.hhea.ascent)
-            .scale(1, -1)
-            .round()
-            .toString()
+      const list = buffer
+        .match(/<glyph [^>]+>/g)
+        .map((str) => {
+          const data = str.match(/d="([^"]+)"/)
 
-          let width = icon.data.advanceWidth
+          if (data) {
+            const name = str.match(/glyph-name="([^"]+)"/)[1]
+            const icon = icons.filter((i) => i.name === name)[0]
 
-          let svg = templates.svg({ name, path, width })
-          fs.writeFileSync(`./svg/${name}.svg`, svg)
-          return name
-        } else {
-          console.log("Skipped an empty glyph while creating SVG.");
+            const path = svgpath(data[1])
+              .rel()
+              .translate(0, -fontObject.hhea.ascent)
+              .scale(1, -1)
+              .round()
+              .toString()
+
+            const width = icon.data.advanceWidth
+
+            return { name, width, height, path }
+          } else {
+            console.log("Skipped an empty glyph while creating SVG.")
+          }
+        })
+        .filter((e) => e)
+
+      const rows = Math.ceil(Math.sqrt(list.length))
+      const cols = Math.ceil(list.length / rows)
+
+      const iconSize = 24
+      const iconGap = 24
+      const padding = 24
+      const scale = height / iconSize
+
+      list.forEach((icon, i) => {
+        const x = i % cols
+        const y = Math.floor(i / rows)
+
+        icon.x =
+          padding +
+          (iconGap + iconSize) * x +
+          (iconSize - icon.width / scale) / 2
+        icon.y = padding + (iconGap + iconSize) * y
+        icon.w = iconSize * (icon.width / height)
+        icon.h = iconSize
+      })
+
+      fs.writeFileSync(
+        `./fonts/preview.svg`,
+        templates.preview({
+          list,
+          height: rows * iconSize + (rows - 1) * iconGap + padding * 2,
+          width: cols * iconSize + (cols - 1) * iconGap + padding * 2,
+        })
+      )
+
+      list.forEach((icon) => {
+        if (icon) {
+          fs.writeFileSync(`./svg/${icon.name}.svg`, templates.svg(icon))
         }
       })
-      .filter((e) => e)
 
-      console.log(`✓ Saved ${list.length} SVG images.`);
-
+      console.log(`✓ Saved ${list.length} SVG images.`)
     }
   })
 })

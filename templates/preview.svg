@@ -1,0 +1,17 @@
+<svg width="{{width}}" height="{{height}}"
+xmlns="http://www.w3.org/2000/svg" >
+  <title>Microns Preview</title>
+  <rect width="{{width}}" height="{{height}}" fill="#fff"/>
+  {{#each list}}
+  {{#if this}}
+  <svg {{" "~}}
+    x="{{round this.x}}" {{" "~}}
+    y="{{round this.y}}" {{" "~}}
+    width="{{round this.w}}" {{" "~}}
+    height="{{round this.h}}" {{" "~}}
+    viewBox="0 0 {{round this.width}} {{round this.height}}">{{" "~}}
+    <path d="{{this.path}}"/>{{" "~}}
+  </svg>
+  {{/if}}
+  {{/each}}
+</svg>
