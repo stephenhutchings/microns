@@ -352,6 +352,14 @@
   content: "\e73e";
 }
 
+.mu-user:before {
+  content: "\e738";
+}
+
+.mu-group:before {
+  content: "\e739";
+}
+
 .mu-menu:before {
   content: "\e73f";
 }
@@ -492,6 +500,10 @@
   content: "\e780";
 }
 
+.mu-power:before {
+  content: "\e789";
+}
+
 .mu-text:before {
   content: "\e75d";
 }
@@ -538,18 +550,6 @@
 
 .mu-hash:before {
   content: "\23";
-}
-
-.mu-translate:before {
-  content: "\e786";
-}
-
-.mu-user:before {
-  content: "\e738";
-}
-
-.mu-group:before {
-  content: "\e739";
 }
 
 .mu-align-left:before {
@@ -600,6 +600,10 @@
   content: "\e785";
 }
 
+.mu-translate:before {
+  content: "\e786";
+}
+
 .mu-web:before {
   content: "\e76a";
 }
@@ -634,10 +638,6 @@
 
 .mu-server:before {
   content: "\e788";
-}
-
-.mu-power:before {
-  content: "\e789";
 }
 
 .mu-landscape:before {
