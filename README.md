@@ -13,7 +13,7 @@ npm install microns
 Microns are a no-nonsense set of icons designed specifically for user
 interfaces. Rather than provide a large library of unnecessary glyphs,
 microns provide a sensible baseline of well-drawn icons that will cover
-99% of your use cases for less than 5kb.
+99% of your use cases for less than 10kb.
 
 <img alt="Microns icon set" src="https://stephenhutchings.github.io/microns/fonts/preview.svg" width="600" height="600" />
 
