@@ -108,8 +108,8 @@ woff2.init().then(function () {
         })
         .filter((e) => e)
 
-      const rows = Math.ceil(Math.sqrt(list.length))
-      const cols = Math.ceil(list.length / rows)
+      const cols = 12
+      const rows = Math.ceil(list.length / cols)
 
       const iconSize = 24
       const iconGap = 24
@@ -118,7 +118,7 @@ woff2.init().then(function () {
 
       list.forEach((icon, i) => {
         const x = i % cols
-        const y = Math.floor(i / rows)
+        const y = Math.floor(i / cols)
 
         icon.x =
           padding +
