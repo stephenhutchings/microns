@@ -150,6 +150,18 @@
     "match": "chevron|angle|south"
   },
   {
+    "name": "Tick Inline",
+    "class": "mu-i-tick",
+    "code": "E718",
+    "match": "check|correct"
+  },
+  {
+    "name": "Cross Inline",
+    "class": "mu-i-cross",
+    "code": "E719",
+    "match": "cancel|undo|clear|wrong|incorrect"
+  },
+  {
     "name": "Plus Inline",
     "class": "mu-i-plus",
     "code": "E716",
@@ -162,16 +174,16 @@
     "match": "delete|remove|minimise|minimize"
   },
   {
-    "name": "Tick Inline",
-    "class": "mu-i-tick",
-    "code": "E718",
-    "match": "check|correct"
+    "name": "Equals Inline",
+    "class": "mu-i-equal",
+    "code": "E7A6",
+    "match": "equality|same|equivalent"
   },
   {
-    "name": "Cross Inline",
-    "class": "mu-i-cross",
-    "code": "E719",
-    "match": "cancel|undo|clear|wrong|incorrect"
+    "name": "Divide Inline",
+    "class": "mu-i-divide",
+    "code": "E7A7",
+    "match": "division|slash"
   },
   {
     "name": "Bullet Inline",
@@ -276,6 +288,12 @@
     "match": "graph|data|plot"
   },
   {
+    "name": "Area Chart",
+    "class": "mu-chart-area",
+    "code": "E7A3",
+    "match": "graph|data|plot"
+  },
+  {
     "name": "Pie Chart",
     "class": "mu-chart-pie",
     "code": "E729",
@@ -354,6 +372,18 @@
     "match": "hidden"
   },
   {
+    "name": "Ban",
+    "class": "mu-ban",
+    "code": "E7A4",
+    "match": "exclude|not|allowed|disable"
+  },
+  {
+    "name": "Pipette",
+    "class": "mu-pipette",
+    "code": "E7A5",
+    "match": "eye|drop|pick|color"
+  },
+  {
     "name": "Link",
     "class": "mu-link",
     "code": "E737",
@@ -417,7 +447,7 @@
     "name": "Video Camera",
     "class": "mu-video-camera",
     "code": "E779",
-    "match": "record"
+    "match": "record|film"
   },
   {
     "name": "Print",
@@ -577,25 +607,25 @@
   },
   {
     "name": "Box Plus",
-    "class": "mu-box-o-plus",
+    "class": "mu-box-plus-o",
     "code": "E77C",
     "match": "box|checkbox|add|outline"
   },
   {
     "name": "Box Minus",
-    "class": "mu-box-o-minus",
+    "class": "mu-box-minus-o",
     "code": "E77D",
     "match": "box|checkbox|partial|indeterminate|outline"
   },
   {
     "name": "Box Tick",
-    "class": "mu-box-o-tick",
+    "class": "mu-box-tick-o",
     "code": "E77E",
     "match": "box|checkbox|selected|on|outline"
   },
   {
     "name": "Box Cross",
-    "class": "mu-box-o-cross",
+    "class": "mu-box-cross-o",
     "code": "E77F",
     "match": "box|checkbox|ballot|outline"
   },
@@ -762,6 +792,12 @@
     "match": "list"
   },
   {
+    "name": "Columns",
+    "class": "mu-columns",
+    "code": "E74B",
+    "match": "text|split"
+  },
+  {
     "name": "Cloud",
     "class": "mu-cloud",
     "code": "E769",
@@ -802,18 +838,6 @@
     "class": "mu-copy",
     "code": "E78A",
     "match": "clone|clipboard|duplicate|layers"
-  },
-  {
-    "name": "Transparent",
-    "class": "mu-transparent",
-    "code": "E78B",
-    "match": "overlap|split|layers"
-  },
-  {
-    "name": "Opaque",
-    "class": "mu-opaque",
-    "code": "E78C",
-    "match": "overlap|join|layers"
   },
   {
     "name": "Landscape",
@@ -858,9 +882,105 @@
     "match": "resize"
   },
   {
+    "name": "Scale Horizontal",
+    "class": "mu-scale-h",
+    "code": "E79B",
+    "match": "resize"
+  },
+  {
+    "name": "Scale Vertical",
+    "class": "mu-scale-v",
+    "code": "E79C",
+    "match": "resize"
+  },
+  {
     "name": "Move",
     "class": "mu-move",
     "code": "E794",
     "match": "drag"
+  },
+  {
+    "name": "Move Alt",
+    "class": "mu-move-alt",
+    "code": "E79D",
+    "match": "drag"
+  },
+  {
+    "name": "Swap",
+    "class": "mu-swap",
+    "code": "E79E",
+    "match": "exchange|reverse|flip"
+  },
+  {
+    "name": "Shuffle",
+    "class": "mu-shuffle",
+    "code": "E79F",
+    "match": "mix|reorder"
+  },
+  {
+    "name": "Above",
+    "class": "mu-above",
+    "code": "E78B",
+    "match": "top|over|front|layers"
+  },
+  {
+    "name": "Below",
+    "class": "mu-below",
+    "code": "E78C",
+    "match": "under|bottom|behind|beneath|layers"
+  },
+  {
+    "name": "Difference",
+    "class": "mu-difference",
+    "code": "E797",
+    "match": "without|exclude|layers"
+  },
+  {
+    "name": "Intersect",
+    "class": "mu-intersect",
+    "code": "E798",
+    "match": "overlap|join|layers"
+  },
+  {
+    "name": "Outline",
+    "class": "mu-outline",
+    "code": "E799",
+    "match": "transparent|split|layers"
+  },
+  {
+    "name": "Unite",
+    "class": "mu-unite",
+    "code": "E79A",
+    "match": "combine|union|join|layers"
+  },
+  {
+    "name": "Paragraph",
+    "class": "mu-paragraph",
+    "code": "00B6",
+    "match": "text|block"
+  },
+  {
+    "name": "Subscript",
+    "class": "mu-sub",
+    "code": "E7A0",
+    "match": "inferior|sinf"
+  },
+  {
+    "name": "Superscript",
+    "class": "mu-sup",
+    "code": "E7A1",
+    "match": "superior|sups"
+  },
+  {
+    "name": "At Sign",
+    "class": "mu-at",
+    "code": "0040",
+    "match": "mail|tag|user|account"
+  },
+  {
+    "name": "Hashtag",
+    "class": "mu-hash",
+    "code": "0023",
+    "match": "topic|subject|number|pound"
   }
 ]

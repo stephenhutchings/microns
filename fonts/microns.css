@@ -84,12 +84,36 @@
   content: "\e773";
 }
 
-.mu-plus:before {
-  content: "\e70d";
+.mu-internal:before {
+  content: "\e795";
 }
 
-.mu-minus:before {
-  content: "\e70e";
+.mu-scale:before {
+  content: "\e793";
+}
+
+.mu-scale-h:before {
+  content: "\e79b";
+}
+
+.mu-scale-v:before {
+  content: "\e79c";
+}
+
+.mu-move:before {
+  content: "\e794";
+}
+
+.mu-move-alt:before {
+  content: "\e79d";
+}
+
+.mu-swap:before {
+  content: "\e79e";
+}
+
+.mu-shuffle:before {
+  content: "\e79f";
 }
 
 .mu-caret:before {
@@ -126,6 +150,14 @@
 
 .mu-i-minus:before {
   content: "\e717";
+}
+
+.mu-i-equal:before {
+  content: "\e7a6";
+}
+
+.mu-i-divide:before {
+  content: "\e7a7";
 }
 
 .mu-i-tick:before {
@@ -208,6 +240,10 @@
   content: "\e729";
 }
 
+.mu-chart-area:before {
+  content: "\e7a3";
+}
+
 .mu-calendar:before {
   content: "\e72a";
 }
@@ -244,6 +280,14 @@
   content: "\e732";
 }
 
+.mu-plus:before {
+  content: "\e70d";
+}
+
+.mu-minus:before {
+  content: "\e70e";
+}
+
 .mu-show:before {
   content: "\e733";
 }
@@ -256,12 +300,24 @@
   content: "\e735";
 }
 
+.mu-ban:before {
+  content: "\e7a4";
+}
+
+.mu-pipette:before {
+  content: "\e7a5";
+}
+
 .mu-link:before {
   content: "\e737";
 }
 
 .mu-attach:before {
   content: "\e776";
+}
+
+.mu-copy:before {
+  content: "\e78a";
 }
 
 .mu-file:before {
@@ -356,6 +412,14 @@
   content: "\e77b";
 }
 
+.mu-min:before {
+  content: "\e791";
+}
+
+.mu-max:before {
+  content: "\e792";
+}
+
 .mu-box:before {
   content: "\e750";
 }
@@ -380,19 +444,19 @@
   content: "\e755";
 }
 
-.mu-box-o-minus:before {
+.mu-box-minus-o:before {
   content: "\e77c";
 }
 
-.mu-box-o-plus:before {
+.mu-box-plus-o:before {
   content: "\e77d";
 }
 
-.mu-box-o-tick:before {
+.mu-box-tick-o:before {
   content: "\e77e";
 }
 
-.mu-box-o-cross:before {
+.mu-box-cross-o:before {
   content: "\e77f";
 }
 
@@ -456,6 +520,38 @@
   content: "\e763";
 }
 
+.mu-paragraph:before {
+  content: "\b6";
+}
+
+.mu-sub:before {
+  content: "\e7a0";
+}
+
+.mu-sup:before {
+  content: "\e7a1";
+}
+
+.mu-at:before {
+  content: "\40";
+}
+
+.mu-hash:before {
+  content: "\23";
+}
+
+.mu-translate:before {
+  content: "\e786";
+}
+
+.mu-user:before {
+  content: "\e738";
+}
+
+.mu-group:before {
+  content: "\e739";
+}
+
 .mu-align-left:before {
   content: "\e764";
 }
@@ -476,10 +572,6 @@
   content: "\e768";
 }
 
-.mu-chapters:before {
-  content: "\e74b";
-}
-
 .mu-justify-left:before {
   content: "\e782";
 }
@@ -492,24 +584,20 @@
   content: "\e783";
 }
 
+.mu-chapters:before {
+  content: "\e74b";
+}
+
+.mu-columns:before {
+  content: "\e7a2";
+}
+
 .mu-sort-asc:before {
   content: "\e784";
 }
 
 .mu-sort-desc:before {
   content: "\e785";
-}
-
-.mu-translate:before {
-  content: "\e786";
-}
-
-.mu-user:before {
-  content: "\e738";
-}
-
-.mu-group:before {
-  content: "\e739";
 }
 
 .mu-web:before {
@@ -552,18 +640,6 @@
   content: "\e789";
 }
 
-.mu-copy:before {
-  content: "\e78a";
-}
-
-.mu-transparent:before {
-  content: "\e78b";
-}
-
-.mu-opaque:before {
-  content: "\e78c";
-}
-
 .mu-landscape:before {
   content: "\e78d";
 }
@@ -580,22 +656,26 @@
   content: "\e790";
 }
 
-.mu-min:before {
-  content: "\e791";
+.mu-above:before {
+  content: "\e78b";
 }
 
-.mu-max:before {
-  content: "\e792";
+.mu-below:before {
+  content: "\e78c";
 }
 
-.mu-scale:before {
-  content: "\e793";
+.mu-difference:before {
+  content: "\e797";
 }
 
-.mu-move:before {
-  content: "\e794";
+.mu-intersect:before {
+  content: "\e798";
 }
 
-.mu-internal:before {
-  content: "\e795";
+.mu-outline:before {
+  content: "\e799";
+}
+
+.mu-unite:before {
+  content: "\e79a";
 }
