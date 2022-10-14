@@ -34,6 +34,13 @@ const templates = {
 const dest = {
   svg: (file = "") => path.join(__dirname, "svg", file),
   fonts: (file = "") => path.join(__dirname, "fonts", file),
+  make: (dir) => {
+    if (fs.existsSync(dir)) {
+      fs.rmSync(dir, { force: true, recursive: true })
+    }
+
+    fs.mkdirSync(dir)
+  },
 }
 
 const note = function (type) {
@@ -46,6 +53,10 @@ const note = function (type) {
 woff2.init().then(function () {
   const font = Font.create(buffer, { type: "otf" })
   const fontObject = font.get()
+
+  // Empty folders
+  dest.make(dest.fonts())
+  dest.make(dest.svg())
 
   const icons = fontObject.glyf
     .filter((g) => g.unicode && g.name !== "space")
