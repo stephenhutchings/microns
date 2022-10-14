@@ -8,6 +8,7 @@
 */
 
 const fs = require("fs")
+const path = require("path")
 const svgpath = require("svgpath")
 const handlebars = require("handlebars")
 const { Font, woff2 } = require("fonteditor-core")
@@ -28,6 +29,11 @@ const templates = {
   preview: handlebars.compile(
     fs.readFileSync("./templates/preview.svg").toString()
   ),
+}
+
+const dest = {
+  svg: (file = "") => path.join(__dirname, "svg", file),
+  fonts: (file = "") => path.join(__dirname, "fonts", file),
 }
 
 const note = function (type) {
@@ -52,15 +58,16 @@ woff2.init().then(function () {
   const css = templates.css({ icons })
   const scss = templates.scss({ icons })
 
-  fs.writeFile(`./fonts/microns.css`, css, note("css"))
-  fs.writeFile(`./fonts/microns.scss`, scss, note("scss"))
+  fs.writeFile(dest.fonts("microns.css"), css, note("css"))
+  fs.writeFile(dest.fonts("microns.scss"), scss, note("scss"))
+  fs.writeFile(dest.fonts("microns.otf"), buffer, note("scss"))
 
-  let types = ["woff2", "woff", "svg"]
+  const types = ["woff2", "woff", "ttf", "svg"]
 
   types.forEach(function (type) {
     const buffer = font.write({ type })
 
-    fs.writeFile(`./fonts/microns.${type}`, buffer, note(type))
+    fs.writeFile(dest.fonts(`microns.${type}`), buffer, note(type))
 
     if (type === "svg") {
       const height = fontObject.hhea.ascent - fontObject.hhea.descent
@@ -112,7 +119,7 @@ woff2.init().then(function () {
       })
 
       fs.writeFileSync(
-        `./fonts/preview.svg`,
+        dest.fonts("preview.svg"),
         templates.preview({
           list,
           height: rows * iconSize + (rows - 1) * iconGap + padding * 2,
@@ -122,7 +129,7 @@ woff2.init().then(function () {
 
       list.forEach((icon) => {
         if (icon) {
-          fs.writeFileSync(`./svg/${icon.name}.svg`, templates.svg(icon))
+          fs.writeFileSync(dest.svg(`${icon.name}.svg`), templates.svg(icon))
         }
       })
 
