@@ -75,7 +75,25 @@
     "name": "Replay",
     "class": "mu-replay",
     "code": "E70C",
-    "match": "rewind,restart"
+    "match": "rewind|restart|skip|forward"
+  },
+  {
+    "name": "Refresh",
+    "class": "mu-refresh",
+    "code": "E785",
+    "match": "rewind|restart|skip|backward"
+  },
+  {
+    "name": "External",
+    "class": "mu-external",
+    "code": "E70C",
+    "match": "box|arrow|link|out"
+  },
+  {
+    "name": "Internal",
+    "class": "mu-internal",
+    "code": "E795",
+    "match": "box|arrow|save|in"
   },
   {
     "name": "Plus",
@@ -132,6 +150,18 @@
     "match": "chevron|angle|south"
   },
   {
+    "name": "Tick Inline",
+    "class": "mu-i-tick",
+    "code": "E718",
+    "match": "check|correct"
+  },
+  {
+    "name": "Cross Inline",
+    "class": "mu-i-cross",
+    "code": "E719",
+    "match": "cancel|undo|clear|wrong|incorrect"
+  },
+  {
     "name": "Plus Inline",
     "class": "mu-i-plus",
     "code": "E716",
@@ -144,16 +174,16 @@
     "match": "delete|remove|minimise|minimize"
   },
   {
-    "name": "Tick Inline",
-    "class": "mu-i-tick",
-    "code": "E718",
-    "match": "check|correct"
+    "name": "Equals Inline",
+    "class": "mu-i-equal",
+    "code": "E7A6",
+    "match": "equality|same|equivalent"
   },
   {
-    "name": "Cross Inline",
-    "class": "mu-i-cross",
-    "code": "E719",
-    "match": "cancel|undo|clear|wrong|incorrect"
+    "name": "Divide Inline",
+    "class": "mu-i-divide",
+    "code": "E7A7",
+    "match": "division|slash"
   },
   {
     "name": "Bullet Inline",
@@ -171,85 +201,103 @@
     "name": "Play",
     "class": "mu-play",
     "code": "E71C",
-    "match": "media,watch|go"
+    "match": "media|watch|go"
   },
   {
     "name": "Pause",
     "class": "mu-pause",
     "code": "E71D",
-    "match": "media,stop"
+    "match": "media|stop"
+  },
+  {
+    "name": "Previous",
+    "class": "mu-prev",
+    "code": "E71C",
+    "match": "media|prev|back"
+  },
+  {
+    "name": "Next",
+    "class": "mu-next",
+    "code": "E71D",
+    "match": "media|forward|skip"
   },
   {
     "name": "Subtitles",
     "class": "mu-subtitles",
     "code": "E71E",
-    "match": "media"
+    "match": "media|captions|text"
   },
   {
     "name": "Low Volume",
     "class": "mu-vol-low",
     "code": "E71F",
-    "match": "media,sound|listen|mute|quiet"
+    "match": "media|sound|listen|mute|quiet"
   },
   {
     "name": "Mid Volume",
     "class": "mu-vol-mid",
     "code": "E720",
-    "match": "media,sound|listen|medium"
+    "match": "media|sound|listen|medium"
   },
   {
     "name": "High Volume",
     "class": "mu-vol-high",
     "code": "E721",
-    "match": "media,sound|listen|loud"
+    "match": "media|sound|listen|loud"
   },
   {
     "name": "Mute Volume",
     "class": "mu-vol-mute",
     "code": "E722",
-    "match": "media,sound|listen|silent"
+    "match": "media|sound|listen|silent"
   },
   {
     "name": "Captions",
     "class": "mu-captions",
     "code": "E723",
-    "match": "media,closed"
+    "match": "media|closed"
   },
   {
     "name": "High Definition",
     "class": "mu-hd",
     "code": "E724",
-    "match": "media,high|definition"
+    "match": "media|high|definition"
   },
   {
     "name": "Audio Description",
     "class": "mu-audio-description",
     "code": "E725",
-    "match": "media,accessibility"
+    "match": "media|accessibility"
   },
   {
     "name": "Line Chart",
     "class": "mu-chart-line",
     "code": "E726",
-    "match": "graph|data"
+    "match": "graph|data|plot"
   },
   {
     "name": "Bar Chart",
     "class": "mu-chart-bar",
     "code": "E727",
-    "match": "graph|data"
+    "match": "graph|data|plot"
   },
   {
     "name": "Scatter Plot",
     "class": "mu-chart-scatter",
     "code": "E728",
-    "match": "graph|data"
+    "match": "graph|data|plot"
+  },
+  {
+    "name": "Area Chart",
+    "class": "mu-chart-area",
+    "code": "E7A3",
+    "match": "graph|data|plot"
   },
   {
     "name": "Pie Chart",
     "class": "mu-chart-pie",
     "code": "E729",
-    "match": "graph|data"
+    "match": "graph|data|plot"
   },
   {
     "name": "Calendar",
@@ -324,16 +372,28 @@
     "match": "hidden"
   },
   {
-    "name": "Cog",
-    "class": "mu-cog",
-    "code": "E736",
-    "match": "settings|preferences"
+    "name": "Ban",
+    "class": "mu-ban",
+    "code": "E7A4",
+    "match": "exclude|not|allowed|disable"
+  },
+  {
+    "name": "Pipette",
+    "class": "mu-pipette",
+    "code": "E7A5",
+    "match": "eye|drop|pick|color"
   },
   {
     "name": "Link",
     "class": "mu-link",
     "code": "E737",
     "match": "anchor|chain"
+  },
+  {
+    "name": "Attach",
+    "class": "mu-attach",
+    "code": "E776",
+    "match": "attachment|file"
   },
   {
     "name": "User",
@@ -354,6 +414,12 @@
     "match": "document"
   },
   {
+    "name": "Folder",
+    "class": "mu-folder",
+    "code": "E777",
+    "match": "document|directory"
+  },
+  {
     "name": "Image",
     "class": "mu-image",
     "code": "E73B",
@@ -372,6 +438,18 @@
     "match": "headphones"
   },
   {
+    "name": "Microphone",
+    "class": "mu-microphone",
+    "code": "E778",
+    "match": "record|mike"
+  },
+  {
+    "name": "Video Camera",
+    "class": "mu-video-camera",
+    "code": "E779",
+    "match": "record|film"
+  },
+  {
     "name": "Print",
     "class": "mu-print",
     "code": "E73E",
@@ -381,19 +459,31 @@
     "name": "Menu",
     "class": "mu-menu",
     "code": "E73F",
-    "match": "hamburger|bars|horizontal"
+    "match": "hamburger|bars|horizontal|drag"
   },
   {
     "name": "Bars",
     "class": "mu-bars",
     "code": "E740",
-    "match": "hamburger|menu|vertical"
+    "match": "hamburger|menu|vertical|drag"
+  },
+  {
+    "name": "Home",
+    "class": "mu-home",
+    "code": "E77A",
+    "match": "return|house"
   },
   {
     "name": "Cancel",
     "class": "mu-cancel",
     "code": "E741",
     "match": "undo|close|exit|cross|x"
+  },
+  {
+    "name": "Cog",
+    "class": "mu-cog",
+    "code": "E736",
+    "match": "settings|preferences"
   },
   {
     "name": "Options (Horizontal)",
@@ -450,10 +540,10 @@
     "match": "square|grid"
   },
   {
-    "name": "Chapters",
-    "class": "mu-chapters",
-    "code": "E74B",
-    "match": "list"
+    "name": "List",
+    "class": "mu-list",
+    "code": "E77B",
+    "match": "section"
   },
   {
     "name": "RSS",
@@ -516,6 +606,30 @@
     "match": "box|checkbox|ballot"
   },
   {
+    "name": "Box Plus",
+    "class": "mu-box-plus-o",
+    "code": "E77C",
+    "match": "box|checkbox|add|outline"
+  },
+  {
+    "name": "Box Minus",
+    "class": "mu-box-minus-o",
+    "code": "E77D",
+    "match": "box|checkbox|partial|indeterminate|outline"
+  },
+  {
+    "name": "Box Tick",
+    "class": "mu-box-tick-o",
+    "code": "E77E",
+    "match": "box|checkbox|selected|on|outline"
+  },
+  {
+    "name": "Box Cross",
+    "class": "mu-box-cross-o",
+    "code": "E77F",
+    "match": "box|checkbox|ballot|outline"
+  },
+  {
     "name": "Radio Off",
     "class": "mu-radio-off",
     "code": "E756",
@@ -556,6 +670,12 @@
     "class": "mu-fail",
     "code": "E75C",
     "match": "clear|error"
+  },
+  {
+    "name": "Unknown",
+    "class": "mu-unknown",
+    "code": "E780",
+    "match": "lost|gone|question|error"
   },
   {
     "name": "Text",
@@ -600,6 +720,12 @@
     "match": "font|clear"
   },
   {
+    "name": "Translate",
+    "class": "mu-translate",
+    "code": "E786",
+    "match": "language"
+  },
+  {
     "name": "Align Left",
     "class": "mu-align-left",
     "code": "E764",
@@ -618,6 +744,24 @@
     "match": "align|end"
   },
   {
+    "name": "Justify Left",
+    "class": "mu-justify-left",
+    "code": "E782",
+    "match": "justify|start"
+  },
+  {
+    "name": "Justify Center",
+    "class": "mu-justify-center",
+    "code": "E781",
+    "match": "justify|middle"
+  },
+  {
+    "name": "Justify Right",
+    "class": "mu-justify-right",
+    "code": "E783",
+    "match": "justify|end"
+  },
+  {
     "name": "Indent",
     "class": "mu-indent",
     "code": "E767",
@@ -630,6 +774,30 @@
     "match": "align|end"
   },
   {
+    "name": "Sort Ascending",
+    "class": "mu-sort-asc",
+    "code": "E767",
+    "match": "order|a-z"
+  },
+  {
+    "name": "Sort Descending",
+    "class": "mu-sort-desc",
+    "code": "E784",
+    "match": "order|z-a"
+  },
+  {
+    "name": "Chapters",
+    "class": "mu-chapters",
+    "code": "E74B",
+    "match": "list"
+  },
+  {
+    "name": "Columns",
+    "class": "mu-columns",
+    "code": "E74B",
+    "match": "text|split"
+  },
+  {
     "name": "Cloud",
     "class": "mu-cloud",
     "code": "E769",
@@ -639,12 +807,180 @@
     "name": "Web",
     "class": "mu-web",
     "code": "E76A",
-    "match": "world|map"
+    "match": "world|map|sphere|internet"
   },
   {
     "name": "Wifi",
     "class": "mu-wifi",
     "code": "E76B",
     "match": "online"
+  },
+  {
+    "name": "Drive",
+    "class": "mu-drive",
+    "code": "E787",
+    "match": "disk"
+  },
+  {
+    "name": "Server",
+    "class": "mu-server",
+    "code": "E788",
+    "match": "drives"
+  },
+  {
+    "name": "Power",
+    "class": "mu-power",
+    "code": "E789",
+    "match": "switch|logout"
+  },
+  {
+    "name": "Copy",
+    "class": "mu-copy",
+    "code": "E78A",
+    "match": "clone|clipboard|duplicate|layers"
+  },
+  {
+    "name": "Landscape",
+    "class": "mu-landscape",
+    "code": "E78D",
+    "match": "orientation"
+  },
+  {
+    "name": "Portrait",
+    "class": "mu-portrait",
+    "code": "E78E",
+    "match": "orientation"
+  },
+  {
+    "name": "Left Panel",
+    "class": "mu-panel-left",
+    "code": "E78F",
+    "match": "panel|left"
+  },
+  {
+    "name": "Right Panel",
+    "class": "mu-panel-right",
+    "code": "E790",
+    "match": "panel|right"
+  },
+  {
+    "name": "Minimize",
+    "class": "mu-min",
+    "code": "E791",
+    "match": "minimise|minimize"
+  },
+  {
+    "name": "Maximize",
+    "class": "mu-max",
+    "code": "E792",
+    "match": "maximise|maximize"
+  },
+  {
+    "name": "Scale",
+    "class": "mu-scale",
+    "code": "E793",
+    "match": "resize"
+  },
+  {
+    "name": "Scale Horizontal",
+    "class": "mu-scale-h",
+    "code": "E79B",
+    "match": "resize"
+  },
+  {
+    "name": "Scale Vertical",
+    "class": "mu-scale-v",
+    "code": "E79C",
+    "match": "resize"
+  },
+  {
+    "name": "Move",
+    "class": "mu-move",
+    "code": "E794",
+    "match": "drag"
+  },
+  {
+    "name": "Move Alt",
+    "class": "mu-move-alt",
+    "code": "E79D",
+    "match": "drag"
+  },
+  {
+    "name": "Swap",
+    "class": "mu-swap",
+    "code": "E79E",
+    "match": "exchange|reverse|flip"
+  },
+  {
+    "name": "Shuffle",
+    "class": "mu-shuffle",
+    "code": "E79F",
+    "match": "mix|reorder"
+  },
+  {
+    "name": "Above",
+    "class": "mu-above",
+    "code": "E78B",
+    "match": "top|over|front|layers"
+  },
+  {
+    "name": "Below",
+    "class": "mu-below",
+    "code": "E78C",
+    "match": "under|bottom|behind|beneath|layers"
+  },
+  {
+    "name": "Difference",
+    "class": "mu-difference",
+    "code": "E797",
+    "match": "without|exclude|layers"
+  },
+  {
+    "name": "Intersect",
+    "class": "mu-intersect",
+    "code": "E798",
+    "match": "overlap|join|layers"
+  },
+  {
+    "name": "Outline",
+    "class": "mu-outline",
+    "code": "E799",
+    "match": "transparent|split|layers"
+  },
+  {
+    "name": "Unite",
+    "class": "mu-unite",
+    "code": "E79A",
+    "match": "combine|union|join|layers"
+  },
+  {
+    "name": "Paragraph",
+    "class": "mu-paragraph",
+    "code": "00B6",
+    "match": "text|block"
+  },
+  {
+    "name": "Subscript",
+    "class": "mu-sub",
+    "code": "E7A0",
+    "match": "inferior|sinf"
+  },
+  {
+    "name": "Superscript",
+    "class": "mu-sup",
+    "code": "E7A1",
+    "match": "superior|sups"
+  },
+  {
+    "name": "At Sign",
+    "class": "mu-at",
+    "code": "0040",
+    "match": "mail|tag|user|account"
+  },
+  {
+    "name": "Hashtag",
+    "class": "mu-hash",
+    "code": "0023",
+    "match": "topic|subject|number|pound"
   }
 ]

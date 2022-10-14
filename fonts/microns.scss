@@ -5,10 +5,9 @@ $microns-font-file: "microns" !default;
   font-family: $microns-font-name;
   font-style: normal;
   font-weight: normal;
-  src: url("#{$microns-font-file}.eot");
-  src: url("#{$microns-font-file}.eot?#iefix") format("embedded-opentype"),
-       url("#{$microns-font-file}.woff2") format("woff2"),
+  src: url("#{$microns-font-file}.woff2") format("woff2"),
        url("#{$microns-font-file}.woff") format("woff"),
+       url("#{$microns-font-file}.otf") format("opentype"),
        url("#{$microns-font-file}.ttf") format("truetype"),
        url("#{$microns-font-file}.svg") format("svg");
 }
@@ -80,12 +79,44 @@ $microns-font-file: "microns" !default;
   content: "\e70c";
 }
 
-.mu-plus:before {
-  content: "\e70d";
+.mu-refresh:before {
+  content: "\e796";
 }
 
-.mu-minus:before {
-  content: "\e70e";
+.mu-external:before {
+  content: "\e773";
+}
+
+.mu-internal:before {
+  content: "\e795";
+}
+
+.mu-scale:before {
+  content: "\e793";
+}
+
+.mu-scale-h:before {
+  content: "\e79b";
+}
+
+.mu-scale-v:before {
+  content: "\e79c";
+}
+
+.mu-move:before {
+  content: "\e794";
+}
+
+.mu-move-alt:before {
+  content: "\e79d";
+}
+
+.mu-swap:before {
+  content: "\e79e";
+}
+
+.mu-shuffle:before {
+  content: "\e79f";
 }
 
 .mu-caret:before {
@@ -124,6 +155,14 @@ $microns-font-file: "microns" !default;
   content: "\e717";
 }
 
+.mu-i-equal:before {
+  content: "\e7a6";
+}
+
+.mu-i-divide:before {
+  content: "\e7a7";
+}
+
 .mu-i-tick:before {
   content: "\e718";
 }
@@ -148,8 +187,20 @@ $microns-font-file: "microns" !default;
   content: "\e71d";
 }
 
+.mu-prev:before {
+  content: "\e774";
+}
+
+.mu-next:before {
+  content: "\e775";
+}
+
 .mu-subtitles:before {
   content: "\e71e";
+}
+
+.mu-audio-description:before {
+  content: "\e725";
 }
 
 .mu-vol-low:before {
@@ -176,10 +227,6 @@ $microns-font-file: "microns" !default;
   content: "\e724";
 }
 
-.mu-audio-description:before {
-  content: "\e725";
-}
-
 .mu-chart-line:before {
   content: "\e726";
 }
@@ -194,6 +241,10 @@ $microns-font-file: "microns" !default;
 
 .mu-chart-pie:before {
   content: "\e729";
+}
+
+.mu-chart-area:before {
+  content: "\e7a3";
 }
 
 .mu-calendar:before {
@@ -232,6 +283,14 @@ $microns-font-file: "microns" !default;
   content: "\e732";
 }
 
+.mu-plus:before {
+  content: "\e70d";
+}
+
+.mu-minus:before {
+  content: "\e70e";
+}
+
 .mu-show:before {
   content: "\e733";
 }
@@ -244,24 +303,32 @@ $microns-font-file: "microns" !default;
   content: "\e735";
 }
 
-.mu-cog:before {
-  content: "\e736";
+.mu-ban:before {
+  content: "\e7a4";
+}
+
+.mu-pipette:before {
+  content: "\e7a5";
 }
 
 .mu-link:before {
   content: "\e737";
 }
 
-.mu-user:before {
-  content: "\e738";
+.mu-attach:before {
+  content: "\e776";
 }
 
-.mu-group:before {
-  content: "\e739";
+.mu-copy:before {
+  content: "\e78a";
 }
 
 .mu-file:before {
   content: "\e73a";
+}
+
+.mu-folder:before {
+  content: "\e777";
 }
 
 .mu-image:before {
@@ -276,6 +343,14 @@ $microns-font-file: "microns" !default;
   content: "\e73d";
 }
 
+.mu-microphone:before {
+  content: "\e778";
+}
+
+.mu-video-camera:before {
+  content: "\e779";
+}
+
 .mu-print:before {
   content: "\e73e";
 }
@@ -288,16 +363,24 @@ $microns-font-file: "microns" !default;
   content: "\e740";
 }
 
-.mu-cancel:before {
-  content: "\e741";
-}
-
 .mu-opts-h:before {
   content: "\e742";
 }
 
 .mu-opts-v:before {
   content: "\e743";
+}
+
+.mu-home:before {
+  content: "\e77a";
+}
+
+.mu-cancel:before {
+  content: "\e741";
+}
+
+.mu-cog:before {
+  content: "\e736";
 }
 
 .mu-search:before {
@@ -328,24 +411,16 @@ $microns-font-file: "microns" !default;
   content: "\e74a";
 }
 
-.mu-chapters:before {
-  content: "\e74b";
+.mu-list:before {
+  content: "\e77b";
 }
 
-.mu-rss:before {
-  content: "\e74c";
+.mu-min:before {
+  content: "\e791";
 }
 
-.mu-share:before {
-  content: "\e74d";
-}
-
-.mu-mail:before {
-  content: "\e74e";
-}
-
-.mu-code:before {
-  content: "\e74f";
+.mu-max:before {
+  content: "\e792";
 }
 
 .mu-box:before {
@@ -370,6 +445,22 @@ $microns-font-file: "microns" !default;
 
 .mu-box-cross:before {
   content: "\e755";
+}
+
+.mu-box-minus-o:before {
+  content: "\e77c";
+}
+
+.mu-box-plus-o:before {
+  content: "\e77d";
+}
+
+.mu-box-tick-o:before {
+  content: "\e77e";
+}
+
+.mu-box-cross-o:before {
+  content: "\e77f";
 }
 
 .mu-radio-off:before {
@@ -400,6 +491,10 @@ $microns-font-file: "microns" !default;
   content: "\e75c";
 }
 
+.mu-unknown:before {
+  content: "\e780";
+}
+
 .mu-text:before {
   content: "\e75d";
 }
@@ -428,6 +523,38 @@ $microns-font-file: "microns" !default;
   content: "\e763";
 }
 
+.mu-paragraph:before {
+  content: "\b6";
+}
+
+.mu-sub:before {
+  content: "\e7a0";
+}
+
+.mu-sup:before {
+  content: "\e7a1";
+}
+
+.mu-at:before {
+  content: "\40";
+}
+
+.mu-hash:before {
+  content: "\23";
+}
+
+.mu-translate:before {
+  content: "\e786";
+}
+
+.mu-user:before {
+  content: "\e738";
+}
+
+.mu-group:before {
+  content: "\e739";
+}
+
 .mu-align-left:before {
   content: "\e764";
 }
@@ -448,14 +575,110 @@ $microns-font-file: "microns" !default;
   content: "\e768";
 }
 
-.mu-cloud:before {
-  content: "\e769";
+.mu-justify-left:before {
+  content: "\e782";
+}
+
+.mu-justify-center:before {
+  content: "\e781";
+}
+
+.mu-justify-right:before {
+  content: "\e783";
+}
+
+.mu-chapters:before {
+  content: "\e74b";
+}
+
+.mu-columns:before {
+  content: "\e7a2";
+}
+
+.mu-sort-asc:before {
+  content: "\e784";
+}
+
+.mu-sort-desc:before {
+  content: "\e785";
 }
 
 .mu-web:before {
   content: "\e76a";
 }
 
+.mu-cloud:before {
+  content: "\e769";
+}
+
 .mu-wifi:before {
   content: "\e76b";
+}
+
+.mu-rss:before {
+  content: "\e74c";
+}
+
+.mu-share:before {
+  content: "\e74d";
+}
+
+.mu-mail:before {
+  content: "\e74e";
+}
+
+.mu-code:before {
+  content: "\e74f";
+}
+
+.mu-drive:before {
+  content: "\e787";
+}
+
+.mu-server:before {
+  content: "\e788";
+}
+
+.mu-power:before {
+  content: "\e789";
+}
+
+.mu-landscape:before {
+  content: "\e78d";
+}
+
+.mu-portrait:before {
+  content: "\e78e";
+}
+
+.mu-panel-left:before {
+  content: "\e78f";
+}
+
+.mu-panel-right:before {
+  content: "\e790";
+}
+
+.mu-above:before {
+  content: "\e78b";
+}
+
+.mu-below:before {
+  content: "\e78c";
+}
+
+.mu-difference:before {
+  content: "\e797";
+}
+
+.mu-intersect:before {
+  content: "\e798";
+}
+
+.mu-outline:before {
+  content: "\e799";
+}
+
+.mu-unite:before {
+  content: "\e79a";
 }
