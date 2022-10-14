@@ -15,7 +15,7 @@ interfaces. Rather than provide a large library of unnecessary glyphs,
 microns provide a sensible baseline of well-drawn icons that will cover
 99% of your use cases for less than 10kb.
 
-<img alt="Microns icon set" src="https://stephenhutchings.github.io/microns/fonts/preview.svg" width="600" height="696" />
+![Microns icon set](https://stephenhutchings.github.io/microns/fonts/preview.svg)
 
 ## Using Microns
 
