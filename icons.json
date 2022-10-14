@@ -63,25 +63,25 @@
     "name": "Undo",
     "class": "mu-undo",
     "code": "E70A",
-    "match": "back|history|navigate|left"
+    "match": "back|history|navigate|turn|left"
   },
   {
     "name": "Redo",
     "class": "mu-redo",
     "code": "E70B",
-    "match": "forward|history|navigate|right"
+    "match": "forward|history|navigate|turn|right"
   },
   {
     "name": "Replay",
     "class": "mu-replay",
     "code": "E70C",
-    "match": "rewind|restart|skip|forward"
+    "match": "rewind|restart|skip|backward"
   },
   {
     "name": "Refresh",
     "class": "mu-refresh",
     "code": "E785",
-    "match": "rewind|restart|skip|backward"
+    "match": "skip|forward|ahead"
   },
   {
     "name": "External",
@@ -153,13 +153,13 @@
     "name": "Tick Inline",
     "class": "mu-i-tick",
     "code": "E718",
-    "match": "check|correct"
+    "match": "check|correct|good"
   },
   {
     "name": "Cross Inline",
     "class": "mu-i-cross",
     "code": "E719",
-    "match": "cancel|undo|clear|wrong|incorrect"
+    "match": "cancel|undo|clear|wrong|incorrect|bad|x|times|multiply"
   },
   {
     "name": "Plus Inline",
@@ -189,13 +189,13 @@
     "name": "Bullet Inline",
     "class": "mu-i-bullet",
     "code": "E71A",
-    "match": "circle|dot|spot"
+    "match": "circle|dot|spot|multiply"
   },
   {
     "name": "Asterisk Inline",
     "class": "mu-i-asterisk",
     "code": "E71B",
-    "match": "check|correct"
+    "match": "check|correct|multiply"
   },
   {
     "name": "Play",
@@ -375,7 +375,7 @@
     "name": "Ban",
     "class": "mu-ban",
     "code": "E7A4",
-    "match": "exclude|not|allowed|disable"
+    "match": "exclude|not allowed|disable|cancel"
   },
   {
     "name": "Pipette",
@@ -417,13 +417,13 @@
     "name": "Folder",
     "class": "mu-folder",
     "code": "E777",
-    "match": "document|directory"
+    "match": "documents|directory|path"
   },
   {
     "name": "Image",
     "class": "mu-image",
     "code": "E73B",
-    "match": "picture|photo"
+    "match": "picture|photo|img"
   },
   {
     "name": "Video",
@@ -597,13 +597,13 @@
     "name": "Box Tick",
     "class": "mu-box-tick",
     "code": "E754",
-    "match": "box|checkbox|selected|on"
+    "match": "box|checkbox|selected|on|good"
   },
   {
     "name": "Box Cross",
     "class": "mu-box-cross",
     "code": "E755",
-    "match": "box|checkbox|ballot"
+    "match": "box|checkbox|ballot|bad|x"
   },
   {
     "name": "Box Plus",
@@ -627,7 +627,7 @@
     "name": "Box Cross",
     "class": "mu-box-cross-o",
     "code": "E77F",
-    "match": "box|checkbox|ballot|outline"
+    "match": "box|checkbox|ballot|outline|bad|x"
   },
   {
     "name": "Radio Off",
@@ -663,13 +663,13 @@
     "name": "Pass",
     "class": "mu-pass",
     "code": "E75B",
-    "match": "confirm"
+    "match": "confirm|success|good"
   },
   {
     "name": "Fail",
     "class": "mu-fail",
     "code": "E75C",
-    "match": "clear|error"
+    "match": "clear|error|bad"
   },
   {
     "name": "Unknown",

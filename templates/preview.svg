@@ -1,7 +1,7 @@
 <svg width="{{width}}" height="{{height}}"
 xmlns="http://www.w3.org/2000/svg">
   <title>Microns Preview</title>
-  <rect width="{{width}}" height="{{height}}" fill="#fff"/>
+  <rect width="{{width}}" height="{{height}}" fill="#fff" stroke="#ccc" stroke-width="2"/>
   {{#each list}}
   {{#if this}}
   <svg {{" "~}}
