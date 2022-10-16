@@ -339,7 +339,7 @@
     "name": "Chat",
     "class": "mu-chat",
     "code": "E730",
-    "match": "comment|conversation"
+    "match": "message|comment|conversation"
   },
   {
     "name": "Edit",
@@ -387,7 +387,7 @@
     "name": "Link",
     "class": "mu-link",
     "code": "E737",
-    "match": "anchor|chain"
+    "match": "anchor|chain|url"
   },
   {
     "name": "Attach",
