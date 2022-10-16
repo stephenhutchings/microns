@@ -6,7 +6,7 @@
 
 The universal icon set for user interfaces. [Read more](https://www.s-ings.com/projects/microns-icon-font/).
 
-Have suggestions for new issues? [Add them here](https://github.com/stephenhutchings/microns/issues/21)!
+Have suggestions for new icons? [Add them here](https://github.com/stephenhutchings/microns/issues/21)!
 
 ```
 npm install microns
