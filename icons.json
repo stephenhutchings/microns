@@ -387,7 +387,7 @@
     "name": "Link",
     "class": "mu-link",
     "code": "E737",
-    "match": "anchor|chain"
+    "match": "anchor|chain|url"
   },
   {
     "name": "Attach",
