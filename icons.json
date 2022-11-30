@@ -357,7 +357,7 @@
     "name": "Show",
     "class": "mu-show",
     "code": "E733",
-    "match": "visible|published|eye|open"
+    "match": "visible|published|eye|open|watch|view"
   },
   {
     "name": "Hide",
@@ -675,7 +675,7 @@
     "name": "Unknown",
     "class": "mu-unknown",
     "code": "E780",
-    "match": "lost|gone|question|error"
+    "match": "lost|gone|question|error|help"
   },
   {
     "name": "Text",
@@ -975,7 +975,7 @@
     "name": "At Sign",
     "class": "mu-at",
     "code": "0040",
-    "match": "mail|tag|user|account"
+    "match": "mail|tag|user|account|mention"
   },
   {
     "name": "Hashtag",
