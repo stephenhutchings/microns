@@ -86,7 +86,7 @@
   {
     "name": "External",
     "class": "mu-external",
-    "code": "E70C",
+    "code": "E773",
     "match": "box|arrow|link|out"
   },
   {
