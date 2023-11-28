@@ -80,7 +80,7 @@
   {
     "name": "Refresh",
     "class": "mu-refresh",
-    "code": "E785",
+    "code": "E796",
     "match": "skip|forward|ahead"
   },
   {
@@ -212,13 +212,13 @@
   {
     "name": "Previous",
     "class": "mu-prev",
-    "code": "E71C",
+    "code": "E774",
     "match": "media|prev|back"
   },
   {
     "name": "Next",
     "class": "mu-next",
-    "code": "E71D",
+    "code": "E775",
     "match": "media|forward|skip"
   },
   {
@@ -608,13 +608,13 @@
   {
     "name": "Box Plus",
     "class": "mu-box-plus-o",
-    "code": "E77C",
+    "code": "E77D",
     "match": "box|checkbox|add|outline"
   },
   {
     "name": "Box Minus",
     "class": "mu-box-minus-o",
-    "code": "E77D",
+    "code": "E77C",
     "match": "box|checkbox|partial|indeterminate|outline"
   },
   {
@@ -776,13 +776,13 @@
   {
     "name": "Sort Ascending",
     "class": "mu-sort-asc",
-    "code": "E767",
+    "code": "E784",
     "match": "order|a-z"
   },
   {
     "name": "Sort Descending",
     "class": "mu-sort-desc",
-    "code": "E784",
+    "code": "E785",
     "match": "order|z-a"
   },
   {
@@ -794,7 +794,7 @@
   {
     "name": "Columns",
     "class": "mu-columns",
-    "code": "E74B",
+    "code": "E7A2",
     "match": "text|split"
   },
   {

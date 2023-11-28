@@ -14,6 +14,8 @@ const handlebars = require("handlebars")
 const { Font, woff2 } = require("fonteditor-core")
 const buffer = fs.readFileSync("./fonts/microns.otf")
 
+const dict = JSON.parse(fs.readFileSync("icons.json"))
+
 handlebars.registerHelper("round", Math.round)
 
 const templates = {
@@ -50,13 +52,38 @@ const note = function (type) {
   }
 }
 
+// Throws an error if the dictionary icon codes are out of sync with the font
+const testDictionaryCodes = function (icons) {
+  const errors = []
+  icons.forEach((icon) => {
+    const item = dict.find((other) => other.class.slice(3) === icon.name)
+
+    if (!item) {
+      errors.push(["Missing item", icon.name])
+    }
+
+    const codeA = parseInt(icon.code, 16)
+    const codeB = parseInt(item.code, 16)
+
+    if (codeA !== codeB) {
+      errors.push(["Codes do not match", icon.name, icon.code, item.code])
+    }
+  })
+
+  if (errors.length) {
+    console.log("Build cancelled. Check these items in the dictionary.")
+
+    errors.forEach((err) => {
+      console.log(err.join(" - "))
+    })
+
+    process.exit()
+  }
+}
+
 woff2.init().then(function () {
   const font = Font.create(buffer, { type: "otf" })
   const fontObject = font.get()
-
-  // Empty folders
-  dest.make(dest.fonts())
-  dest.make(dest.svg())
 
   const icons = fontObject.glyf
     .filter((g) => g.unicode && g.name !== "space")
@@ -65,6 +92,12 @@ woff2.init().then(function () {
       name: g.name,
       data: g,
     }))
+
+  testDictionaryCodes(icons)
+
+  // Empty folders
+  dest.make(dest.fonts())
+  dest.make(dest.svg())
 
   const css = templates.css({ icons })
   const scss = templates.scss({ icons })
