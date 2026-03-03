@@ -52,7 +52,7 @@ svg/
 ### Icons/Artwork
 
 Distributed under
-[CC BY-SA](http://creativecommons.org/licenses/by-sa/3.0/) licence.
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) licence.
 
 ### Font
 
