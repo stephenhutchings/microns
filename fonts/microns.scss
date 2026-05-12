@@ -26,659 +26,684 @@ $microns-font-file: "microns" !default;
   user-select: none;
 }
 
-
 .mu-arrow-left:before {
-  content: "\e700";
+  content: "\E700";
 }
 
 .mu-arrow-right:before {
-  content: "\e701";
+  content: "\E701";
 }
 
 .mu-arrow-up:before {
-  content: "\e702";
+  content: "\E702";
 }
 
 .mu-arrow-down:before {
-  content: "\e703";
+  content: "\E703";
 }
 
 .mu-left:before {
-  content: "\e704";
+  content: "\E704";
 }
 
 .mu-right:before {
-  content: "\e705";
+  content: "\E705";
 }
 
 .mu-up:before {
-  content: "\e706";
+  content: "\E706";
 }
 
 .mu-down:before {
-  content: "\e707";
+  content: "\E707";
 }
 
 .mu-upload:before {
-  content: "\e708";
+  content: "\E708";
 }
 
 .mu-download:before {
-  content: "\e709";
+  content: "\E709";
 }
 
 .mu-undo:before {
-  content: "\e70a";
+  content: "\E70A";
 }
 
 .mu-redo:before {
-  content: "\e70b";
+  content: "\E70B";
 }
 
 .mu-replay:before {
-  content: "\e70c";
+  content: "\E70C";
 }
 
 .mu-refresh:before {
-  content: "\e796";
+  content: "\E796";
 }
 
 .mu-external:before {
-  content: "\e773";
+  content: "\E773";
 }
 
 .mu-internal:before {
-  content: "\e795";
-}
-
-.mu-scale:before {
-  content: "\e793";
-}
-
-.mu-scale-h:before {
-  content: "\e79b";
-}
-
-.mu-scale-v:before {
-  content: "\e79c";
-}
-
-.mu-move:before {
-  content: "\e794";
-}
-
-.mu-move-alt:before {
-  content: "\e79d";
-}
-
-.mu-swap:before {
-  content: "\e79e";
-}
-
-.mu-shuffle:before {
-  content: "\e79f";
-}
-
-.mu-caret:before {
-  content: "\e70f";
-}
-
-.mu-caret-up:before {
-  content: "\e710";
-}
-
-.mu-caret-down:before {
-  content: "\e711";
-}
-
-.mu-i-left:before {
-  content: "\e712";
-}
-
-.mu-i-right:before {
-  content: "\e713";
-}
-
-.mu-i-up:before {
-  content: "\e714";
-}
-
-.mu-i-down:before {
-  content: "\e715";
-}
-
-.mu-i-plus:before {
-  content: "\e716";
-}
-
-.mu-i-minus:before {
-  content: "\e717";
-}
-
-.mu-i-equal:before {
-  content: "\e7a6";
-}
-
-.mu-i-divide:before {
-  content: "\e7a7";
-}
-
-.mu-i-tick:before {
-  content: "\e718";
-}
-
-.mu-i-cross:before {
-  content: "\e719";
-}
-
-.mu-i-bullet:before {
-  content: "\e71a";
-}
-
-.mu-i-asterisk:before {
-  content: "\e71b";
-}
-
-.mu-play:before {
-  content: "\e71c";
-}
-
-.mu-pause:before {
-  content: "\e71d";
-}
-
-.mu-prev:before {
-  content: "\e774";
-}
-
-.mu-next:before {
-  content: "\e775";
-}
-
-.mu-subtitles:before {
-  content: "\e71e";
-}
-
-.mu-audio-description:before {
-  content: "\e725";
-}
-
-.mu-vol-low:before {
-  content: "\e71f";
-}
-
-.mu-vol-mid:before {
-  content: "\e720";
-}
-
-.mu-vol-high:before {
-  content: "\e721";
-}
-
-.mu-vol-mute:before {
-  content: "\e722";
-}
-
-.mu-captions:before {
-  content: "\e723";
-}
-
-.mu-hd:before {
-  content: "\e724";
-}
-
-.mu-chart-line:before {
-  content: "\e726";
-}
-
-.mu-chart-bar:before {
-  content: "\e727";
-}
-
-.mu-chart-scatter:before {
-  content: "\e728";
-}
-
-.mu-chart-pie:before {
-  content: "\e729";
-}
-
-.mu-chart-area:before {
-  content: "\e7a3";
-}
-
-.mu-calendar:before {
-  content: "\e72a";
-}
-
-.mu-clock:before {
-  content: "\e72b";
-}
-
-.mu-star:before {
-  content: "\e72c";
-}
-
-.mu-heart:before {
-  content: "\e72d";
-}
-
-.mu-flag:before {
-  content: "\e72e";
-}
-
-.mu-bookmark:before {
-  content: "\e72f";
-}
-
-.mu-chat:before {
-  content: "\e730";
-}
-
-.mu-edit:before {
-  content: "\e731";
-}
-
-.mu-delete:before {
-  content: "\e732";
+  content: "\E795";
 }
 
 .mu-plus:before {
-  content: "\e70d";
+  content: "\E70D";
 }
 
 .mu-minus:before {
-  content: "\e70e";
+  content: "\E70E";
+}
+
+.mu-caret:before {
+  content: "\E70F";
+}
+
+.mu-caret-up:before {
+  content: "\E710";
+}
+
+.mu-caret-down:before {
+  content: "\E711";
+}
+
+.mu-i-left:before {
+  content: "\E712";
+}
+
+.mu-i-right:before {
+  content: "\E713";
+}
+
+.mu-i-up:before {
+  content: "\E714";
+}
+
+.mu-i-down:before {
+  content: "\E715";
+}
+
+.mu-i-tick:before {
+  content: "\E718";
+}
+
+.mu-i-cross:before {
+  content: "\E719";
+}
+
+.mu-i-plus:before {
+  content: "\E716";
+}
+
+.mu-i-minus:before {
+  content: "\E717";
+}
+
+.mu-i-equal:before {
+  content: "\E7A6";
+}
+
+.mu-i-divide:before {
+  content: "\E7A7";
+}
+
+.mu-i-bullet:before {
+  content: "\E71A";
+}
+
+.mu-i-asterisk:before {
+  content: "\E71B";
+}
+
+.mu-play:before {
+  content: "\E71C";
+}
+
+.mu-pause:before {
+  content: "\E71D";
+}
+
+.mu-prev:before {
+  content: "\E774";
+}
+
+.mu-next:before {
+  content: "\E775";
+}
+
+.mu-subtitles:before {
+  content: "\E71E";
+}
+
+.mu-vol-low:before {
+  content: "\E71F";
+}
+
+.mu-vol-mid:before {
+  content: "\E720";
+}
+
+.mu-vol-high:before {
+  content: "\E721";
+}
+
+.mu-vol-mute:before {
+  content: "\E722";
+}
+
+.mu-captions:before {
+  content: "\E723";
+}
+
+.mu-hd:before {
+  content: "\E724";
+}
+
+.mu-audio-description:before {
+  content: "\E725";
+}
+
+.mu-chart-line:before {
+  content: "\E726";
+}
+
+.mu-chart-bar:before {
+  content: "\E727";
+}
+
+.mu-chart-scatter:before {
+  content: "\E728";
+}
+
+.mu-chart-area:before {
+  content: "\E7A3";
+}
+
+.mu-chart-pie:before {
+  content: "\E729";
+}
+
+.mu-date:before,
+.mu-calendar:before {
+  content: "\E72A";
+}
+
+.mu-time:before,
+.mu-clock:before {
+  content: "\E72B";
+}
+
+.mu-star:before {
+  content: "\E72C";
+}
+
+.mu-heart:before {
+  content: "\E72D";
+}
+
+.mu-flag:before {
+  content: "\E72E";
+}
+
+.mu-bookmark:before {
+  content: "\E72F";
+}
+
+.mu-chat:before {
+  content: "\E730";
+}
+
+.mu-edit:before {
+  content: "\E731";
+}
+
+.mu-delete:before {
+  content: "\E732";
 }
 
 .mu-show:before {
-  content: "\e733";
+  content: "\E733";
 }
 
 .mu-hide:before {
-  content: "\e734";
+  content: "\E734";
 }
 
 .mu-lock:before {
-  content: "\e735";
+  content: "\E735";
 }
 
 .mu-ban:before {
-  content: "\e7a4";
+  content: "\E7A4";
 }
 
 .mu-pipette:before {
-  content: "\e7a5";
+  content: "\E7A5";
 }
 
 .mu-link:before {
-  content: "\e737";
+  content: "\E737";
 }
 
 .mu-attach:before {
-  content: "\e776";
-}
-
-.mu-copy:before {
-  content: "\e78a";
-}
-
-.mu-file:before {
-  content: "\e73a";
-}
-
-.mu-folder:before {
-  content: "\e777";
-}
-
-.mu-image:before {
-  content: "\e73b";
-}
-
-.mu-video:before {
-  content: "\e73c";
-}
-
-.mu-audio:before {
-  content: "\e73d";
-}
-
-.mu-microphone:before {
-  content: "\e778";
-}
-
-.mu-video-camera:before {
-  content: "\e779";
-}
-
-.mu-print:before {
-  content: "\e73e";
+  content: "\E776";
 }
 
 .mu-user:before {
-  content: "\e738";
+  content: "\E738";
 }
 
 .mu-group:before {
-  content: "\e739";
+  content: "\E739";
+}
+
+.mu-file:before {
+  content: "\E73A";
+}
+
+.mu-folder:before {
+  content: "\E777";
+}
+
+.mu-image:before {
+  content: "\E73B";
+}
+
+.mu-video:before {
+  content: "\E73C";
+}
+
+.mu-audio:before {
+  content: "\E73D";
+}
+
+.mu-microphone:before {
+  content: "\E778";
+}
+
+.mu-video-camera:before {
+  content: "\E779";
+}
+
+.mu-print:before {
+  content: "\E73E";
 }
 
 .mu-menu:before {
-  content: "\e73f";
+  content: "\E73F";
 }
 
 .mu-bars:before {
-  content: "\e740";
-}
-
-.mu-opts-h:before {
-  content: "\e742";
-}
-
-.mu-opts-v:before {
-  content: "\e743";
+  content: "\E740";
 }
 
 .mu-home:before {
-  content: "\e77a";
+  content: "\E77A";
 }
 
 .mu-cancel:before {
-  content: "\e741";
+  content: "\E741";
 }
 
 .mu-cog:before {
-  content: "\e736";
+  content: "\E736";
+}
+
+.mu-opts-h:before {
+  content: "\E742";
+}
+
+.mu-opts-v:before {
+  content: "\E743";
 }
 
 .mu-search:before {
-  content: "\e744";
+  content: "\E744";
 }
 
 .mu-zoom-in:before {
-  content: "\e745";
+  content: "\E745";
 }
 
 .mu-zoom-out:before {
-  content: "\e746";
+  content: "\E746";
 }
 
 .mu-contract:before {
-  content: "\e747";
+  content: "\E747";
 }
 
 .mu-expand:before {
-  content: "\e748";
+  content: "\E748";
 }
 
 .mu-grid:before {
-  content: "\e749";
+  content: "\E749";
 }
 
 .mu-matrix:before {
-  content: "\e74a";
+  content: "\E74A";
 }
 
 .mu-list:before {
-  content: "\e77b";
-}
-
-.mu-min:before {
-  content: "\e791";
-}
-
-.mu-max:before {
-  content: "\e792";
-}
-
-.mu-box:before {
-  content: "\e750";
-}
-
-.mu-box-full:before {
-  content: "\e751";
-}
-
-.mu-box-plus:before {
-  content: "\e752";
-}
-
-.mu-box-minus:before {
-  content: "\e753";
-}
-
-.mu-box-tick:before {
-  content: "\e754";
-}
-
-.mu-box-cross:before {
-  content: "\e755";
-}
-
-.mu-box-minus-o:before {
-  content: "\e77c";
-}
-
-.mu-box-plus-o:before {
-  content: "\e77d";
-}
-
-.mu-box-tick-o:before {
-  content: "\e77e";
-}
-
-.mu-box-cross-o:before {
-  content: "\e77f";
-}
-
-.mu-radio-off:before {
-  content: "\e756";
-}
-
-.mu-radio-on:before {
-  content: "\e757";
-}
-
-.mu-radio-full:before {
-  content: "\e758";
-}
-
-.mu-info:before {
-  content: "\e759";
-}
-
-.mu-warn:before {
-  content: "\e75a";
-}
-
-.mu-pass:before {
-  content: "\e75b";
-}
-
-.mu-fail:before {
-  content: "\e75c";
-}
-
-.mu-unknown:before {
-  content: "\e780";
-}
-
-.mu-power:before {
-  content: "\e789";
-}
-
-.mu-text:before {
-  content: "\e75d";
-}
-
-.mu-bold:before {
-  content: "\e75e";
-}
-
-.mu-italic:before {
-  content: "\e75f";
-}
-
-.mu-underline:before {
-  content: "\e760";
-}
-
-.mu-strikeout:before {
-  content: "\e761";
-}
-
-.mu-text-size:before {
-  content: "\e762";
-}
-
-.mu-text-unstyle:before {
-  content: "\e763";
-}
-
-.mu-paragraph:before {
-  content: "\b6";
-}
-
-.mu-sub:before {
-  content: "\e7a0";
-}
-
-.mu-sup:before {
-  content: "\e7a1";
-}
-
-.mu-at:before {
-  content: "\40";
-}
-
-.mu-hash:before {
-  content: "\23";
-}
-
-.mu-align-left:before {
-  content: "\e764";
-}
-
-.mu-align-center:before {
-  content: "\e765";
-}
-
-.mu-align-right:before {
-  content: "\e766";
-}
-
-.mu-indent:before {
-  content: "\e767";
-}
-
-.mu-outdent:before {
-  content: "\e768";
-}
-
-.mu-justify-left:before {
-  content: "\e782";
-}
-
-.mu-justify-center:before {
-  content: "\e781";
-}
-
-.mu-justify-right:before {
-  content: "\e783";
-}
-
-.mu-chapters:before {
-  content: "\e74b";
-}
-
-.mu-columns:before {
-  content: "\e7a2";
-}
-
-.mu-sort-asc:before {
-  content: "\e784";
-}
-
-.mu-sort-desc:before {
-  content: "\e785";
-}
-
-.mu-translate:before {
-  content: "\e786";
-}
-
-.mu-web:before {
-  content: "\e76a";
-}
-
-.mu-cloud:before {
-  content: "\e769";
-}
-
-.mu-wifi:before {
-  content: "\e76b";
+  content: "\E77B";
 }
 
 .mu-rss:before {
-  content: "\e74c";
+  content: "\E74C";
 }
 
 .mu-share:before {
-  content: "\e74d";
+  content: "\E74D";
 }
 
 .mu-mail:before {
-  content: "\e74e";
+  content: "\E74E";
 }
 
 .mu-code:before {
-  content: "\e74f";
+  content: "\E74F";
+}
+
+.mu-box:before {
+  content: "\E750";
+}
+
+.mu-box-full:before {
+  content: "\E751";
+}
+
+.mu-box-plus:before {
+  content: "\E752";
+}
+
+.mu-box-minus:before {
+  content: "\E753";
+}
+
+.mu-box-tick:before {
+  content: "\E754";
+}
+
+.mu-box-cross:before {
+  content: "\E755";
+}
+
+.mu-box-plus-o:before {
+  content: "\E77D";
+}
+
+.mu-box-minus-o:before {
+  content: "\E77C";
+}
+
+.mu-box-tick-o:before {
+  content: "\E77E";
+}
+
+.mu-box-cross-o:before {
+  content: "\E77F";
+}
+
+.mu-radio-off:before {
+  content: "\E756";
+}
+
+.mu-radio-on:before {
+  content: "\E757";
+}
+
+.mu-radio-full:before {
+  content: "\E758";
+}
+
+.mu-info:before {
+  content: "\E759";
+}
+
+.mu-warn:before {
+  content: "\E75A";
+}
+
+.mu-pass:before {
+  content: "\E75B";
+}
+
+.mu-fail:before {
+  content: "\E75C";
+}
+
+.mu-unknown:before {
+  content: "\E780";
+}
+
+.mu-text:before {
+  content: "\E75D";
+}
+
+.mu-bold:before {
+  content: "\E75E";
+}
+
+.mu-italic:before {
+  content: "\E75F";
+}
+
+.mu-underline:before {
+  content: "\E760";
+}
+
+.mu-strikeout:before {
+  content: "\E761";
+}
+
+.mu-text-size:before {
+  content: "\E762";
+}
+
+.mu-text-unstyle:before {
+  content: "\E763";
+}
+
+.mu-translate:before {
+  content: "\E786";
+}
+
+.mu-align-left:before {
+  content: "\E764";
+}
+
+.mu-align-center:before {
+  content: "\E765";
+}
+
+.mu-align-right:before {
+  content: "\E766";
+}
+
+.mu-justify-left:before {
+  content: "\E782";
+}
+
+.mu-justify-center:before {
+  content: "\E781";
+}
+
+.mu-justify-right:before {
+  content: "\E783";
+}
+
+.mu-indent:before {
+  content: "\E767";
+}
+
+.mu-outdent:before {
+  content: "\E768";
+}
+
+.mu-sort-asc:before {
+  content: "\E784";
+}
+
+.mu-sort-desc:before {
+  content: "\E785";
+}
+
+.mu-chapters:before {
+  content: "\E74B";
+}
+
+.mu-columns:before {
+  content: "\E7A2";
+}
+
+.mu-cloud:before {
+  content: "\E769";
+}
+
+.mu-web:before {
+  content: "\E76A";
+}
+
+.mu-wifi:before {
+  content: "\E76B";
 }
 
 .mu-drive:before {
-  content: "\e787";
+  content: "\E787";
 }
 
 .mu-server:before {
-  content: "\e788";
+  content: "\E788";
+}
+
+.mu-power:before {
+  content: "\E789";
+}
+
+.mu-copy:before {
+  content: "\E78A";
 }
 
 .mu-landscape:before {
-  content: "\e78d";
+  content: "\E78D";
 }
 
 .mu-portrait:before {
-  content: "\e78e";
+  content: "\E78E";
 }
 
 .mu-panel-left:before {
-  content: "\e78f";
+  content: "\E78F";
 }
 
 .mu-panel-right:before {
-  content: "\e790";
+  content: "\E790";
+}
+
+.mu-min:before {
+  content: "\E791";
+}
+
+.mu-max:before {
+  content: "\E792";
+}
+
+.mu-scale:before {
+  content: "\E793";
+}
+
+.mu-scale-h:before {
+  content: "\E79B";
+}
+
+.mu-scale-v:before {
+  content: "\E79C";
+}
+
+.mu-move:before {
+  content: "\E794";
+}
+
+.mu-move-alt:before {
+  content: "\E79D";
+}
+
+.mu-swap:before {
+  content: "\E79E";
+}
+
+.mu-shuffle:before {
+  content: "\E79F";
 }
 
 .mu-above:before {
-  content: "\e78b";
+  content: "\E78B";
 }
 
 .mu-below:before {
-  content: "\e78c";
+  content: "\E78C";
 }
 
 .mu-difference:before {
-  content: "\e797";
+  content: "\E797";
 }
 
 .mu-intersect:before {
-  content: "\e798";
+  content: "\E798";
 }
 
 .mu-outline:before {
-  content: "\e799";
+  content: "\E799";
 }
 
 .mu-unite:before {
-  content: "\e79a";
+  content: "\E79A";
+}
+
+.mu-paragraph:before {
+  content: "\00B6";
+}
+
+.mu-sub:before {
+  content: "\E7A0";
+}
+
+.mu-sup:before {
+  content: "\E7A1";
+}
+
+.mu-at:before {
+  content: "\0040";
+}
+
+.mu-hash:before {
+  content: "\0023";
+}
+
+.mu-stop:before {
+  content: "\E7A8";
+}
+
+.mu-a11y:before {
+  content: "\E7A9";
+}
+
+.mu-bag:before {
+  content: "\E7AA";
+}
+
+.mu-mode-auto:before {
+  content: "\E7B0";
+}
+
+.mu-mode-dark:before {
+  content: "\E7B1";
+}
+
+.mu-mode-light:before {
+  content: "\E7B2";
 }
