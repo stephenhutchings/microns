@@ -300,16 +300,18 @@
     "match": "graph|data|plot"
   },
   {
-    "name": "Calendar",
-    "class": "mu-calendar",
+    "name": "Date",
+    "class": "mu-date",
+    "alias": "mu-calendar",
     "code": "E72A",
-    "match": "date|schedule|year|month"
+    "match": "calendar|schedule|year|month"
   },
   {
-    "name": "Clock",
-    "class": "mu-clock",
+    "name": "Time",
+    "class": "mu-time",
+    "alias": "mu-clock",
     "code": "E72B",
-    "match": "time|schedule|hour|second|minute"
+    "match": "clock|stopwatch|schedule|hour|second|minute"
   },
   {
     "name": "Star",
@@ -982,5 +984,41 @@
     "class": "mu-hash",
     "code": "0023",
     "match": "topic|subject|number|pound"
+  },
+  {
+    "name": "Stop",
+    "class": "mu-stop",
+    "code": "E7A8",
+    "match": "media|pause"
+  },
+  {
+    "name": "Accessibility",
+    "class": "mu-a11y",
+    "code": "E7A9",
+    "match": "a11y|ally|person|individual"
+  },
+  {
+    "name": "Shopping bag",
+    "class": "mu-bag",
+    "code": "E7AA",
+    "match": "shopping|cart|items"
+  },
+  {
+    "name": "Default mode",
+    "class": "mu-mode-auto",
+    "code": "E7B0",
+    "match": "auto|theme|scheme|color|ui"
+  },
+  {
+    "name": "Dark mode",
+    "class": "mu-mode-dark",
+    "code": "E7B1",
+    "match": "moon|theme|scheme|color|ui"
+  },
+  {
+    "name": "Light mode",
+    "class": "mu-mode-light",
+    "code": "E7B2",
+    "match": "sun|theme|scheme|color|ui"
   }
 ]
