@@ -20,16 +20,16 @@ handlebars.registerHelper("round", Math.round)
 
 const templates = {
   svg: handlebars.compile(
-    fs.readFileSync("./templates/template.svg").toString()
+    fs.readFileSync("./templates/template.svg").toString(),
   ),
   css: handlebars.compile(
-    fs.readFileSync("./templates/template.css").toString()
+    fs.readFileSync("./templates/template.css").toString(),
   ),
   scss: handlebars.compile(
-    fs.readFileSync("./templates/template.scss").toString()
+    fs.readFileSync("./templates/template.scss").toString(),
   ),
   preview: handlebars.compile(
-    fs.readFileSync("./templates/preview.svg").toString()
+    fs.readFileSync("./templates/preview.svg").toString(),
   ),
 }
 
@@ -56,17 +56,10 @@ const note = function (type) {
 const testDictionaryCodes = function (icons) {
   const errors = []
   icons.forEach((icon) => {
-    const item = dict.find((other) => other.class.slice(3) === icon.name)
-
-    if (!item) {
+    if (!icon.data) {
       errors.push(["Missing item", icon.name])
-    }
-
-    const codeA = parseInt(icon.code, 16)
-    const codeB = parseInt(item.code, 16)
-
-    if (codeA !== codeB) {
-      errors.push(["Codes do not match", icon.name, icon.code, item.code])
+    } else if (icon.data.name !== icon.class.slice(3)) {
+      errors.push(["Codes do not match", icon.data.name, icon.code, icon.class])
     }
   })
 
@@ -85,13 +78,16 @@ woff2.init().then(function () {
   const font = Font.create(buffer, { type: "otf" })
   const fontObject = font.get()
 
-  const icons = fontObject.glyf
-    .filter((g) => g.unicode && g.name !== "space")
-    .map((g) => ({
-      code: g.unicode[0].toString(16),
-      name: g.name,
-      data: g,
-    }))
+  const icons = dict.map((icon) => {
+    const data = fontObject.glyf.find(
+      (g) => g.unicode?.[0] === parseInt(icon.code, 16),
+    )
+
+    return {
+      ...icon,
+      data,
+    }
+  })
 
   testDictionaryCodes(icons)
 
@@ -123,7 +119,7 @@ woff2.init().then(function () {
 
           if (data) {
             const name = str.match(/glyph-name="([^"]+)"/)[1]
-            const icon = icons.filter((i) => i.name === name)[0]
+            const icon = icons.filter((i) => i.data.name === name)[0]
 
             const path = svgpath(data[1])
               .rel()
@@ -134,7 +130,7 @@ woff2.init().then(function () {
 
             const width = icon.data.advanceWidth
 
-            return { name, width, height, path }
+            return { ...icon, width, height, path }
           } else {
             console.log("Skipped an empty glyph while creating SVG.")
           }
@@ -168,12 +164,16 @@ woff2.init().then(function () {
           list,
           height: rows * iconSize + (rows - 1) * iconGap + padding * 2,
           width: cols * iconSize + (cols - 1) * iconGap + padding * 2,
-        })
+        }),
       )
 
       list.forEach((icon) => {
         if (icon) {
-          fs.writeFileSync(dest.svg(`${icon.name}.svg`), templates.svg(icon))
+          const svg = templates.svg(icon)
+          fs.writeFileSync(dest.svg(`${icon.class.slice(3)}.svg`), svg)
+          if (icon.alias) {
+            fs.writeFileSync(dest.svg(`${icon.alias.slice(3)}.svg`), svg)
+          }
         }
       })
 

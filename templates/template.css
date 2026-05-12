@@ -22,10 +22,10 @@
   text-rendering: optimizeLegibility;
   user-select: none;
 }
-
 {{#each icons}}
 
-.mu-{{name}}:before {
+.{{class}}:before{{#if alias}},
+.{{alias}}:before{{/if}} {
   content: "\\{{code}}";
 }
 {{/each}}
