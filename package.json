@@ -30,7 +30,7 @@
     "type": "git",
     "url": "git+https://github.com/stephenhutchings/microns.git"
   },
-  "license": "(OFL-1.1 OR CC-BY-SA-4.0)",
+  "license": "(OFL-1.1 OR CC-BY-SA-4.0 OR MIT)",
   "devDependencies": {
     "fonteditor-core": "^2.6.3",
     "handlebars": "^4.7.9",
