@@ -52,9 +52,13 @@ svg/
 ### Icons/Artwork
 
 Distributed under
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) licence.
+[CC BY-SA 4.0](./LICENCE.md#creative-commons-attribution-share-alike-40-international) licence.
 
 ### Font
 
 Distributed under
-[SIL Open Font Licence](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web) licence.
+[SIL Open Font Licence](./LICENCE.md#sil-open-font-license-version-11) licence.
+
+### Other source code
+
+Distributed under the [MIT Licence](./LICENCE.md#mit-licence).
